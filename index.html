@@ -202,7 +202,7 @@
             <p>Les plages d'explications commencent toujours avec un exemple, ce qui est super utile pour comprendre comment fonctionne une instruction. Le premier exemple commence avec les lignes suivante:</p>
 
             <pre><code class="language-js">textSize(32);
-              text('word', 10, 30);
+text('word', 10, 30);
             </code></pre>
 
             <p>On va les copier et les coller dans la fonction <code class="language-js">draw()</code> de notre code.</p>
@@ -227,14 +227,14 @@
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            Etape 6 - Change le texte et son apparence
+              Etape 6 - Change le texte et son apparence
             </button>
           </h2>
         </div>
         <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
           <div class="card-body">
             <p>En n'ajoutant aucune ligne à ton code, mais en changeant quelques paramètres, peux-tu faire en sorte d'afficher le mot de ton choix (plutôt que 'word'), d'aggrandir la police et... de déplacer le mot vers le centre du canevas?</p>
-              <img class="flexgif img-shadow mb-3" src="images/step6.png" alt="">
+            <img class="flexgif img-shadow mb-3" src="images/step6.png" alt="">
             <div class="alert alert-warning" role="alert">
               <p>
                 <i class="fas fa-exclamation-circle"></i>  Avant de passer à l'étape suivante, valide ton code avec un des instructeurs.
@@ -280,23 +280,22 @@
         </div>
         <div id="collapseHeigth" class="collapse" aria-labelledby="headingHeigth" data-parent="#accordionExample">
           <div class="card-body">
-            <p>👏🏽 <strong>Bravo</strong>!</p>
             <p>Au lieu d'afficher "ouais" en permanence, je vais utiliser l'instruction <code class="language-js">random()</code> pour que l'ordinateur choisisse un mot au hasard dans la liste des adjectifs que je viens de créer. Essaie ceci:</p>
             <pre class="line-numbers language-js">
               <code class="language-js">function draw() {
-  background('red');
-  textSize(100);
-  const adjectives = ['téméraire', 'gentil', 'stylé'];
-  text(random(adjectives), 100, 200);
-}</code>
+                background('red');
+                textSize(100);
+                const adjectives = ['téméraire', 'gentil', 'stylé'];
+                text(random(adjectives), 100, 200);
+              }</code>
             </pre>
             <br>
-            <p><i class="fas fa-exclamation-circle"></i>Attention à tes yeux!!!</p>
+            <p><i class="fas fa-exclamation-circle"></i>  Attention à tes yeux!!!</p>
 
 
             <img class="img-shadow mb-3" src="images/step8.gif" alt="">
             <div class="alert alert-primary" role="alert">
-              🤓 Comment se fait-il que tu vois plusieurs mots apparaître? Réponse à la prochaine étape!</strong>
+              🤓 Comment se fait-il que tu vois plusieurs adjectifs défiler hyper rapidement? Réponse à la prochaine étape!</strong>
             </div>
           </div>
         </div>
@@ -305,153 +304,81 @@
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              <span>Etape 9 - Aligner le drapeau au centre</span>
-              <span class="badge badge-warning">Difficile 🏆</span>
+              <span>Etape 9 - Fais défiler les adjectifs plus lentement</span>
             </button>
           </h2>
         </div>
         <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Nous aimerions que le drapeau se trouve au centre du porte drapeau <small><em>(au centre de la boite bleue)</em></small></p>
+            <p>Nous voyons plusieurs adjectifs défiler hyper rapidement! Pourtant nous n'avons pas donné des milliers d'instructions à l'ordinateur pour qu'il le fasse.</p>
             <div class="alert alert-primary" role="alert">
-              <h4 class="alert-heading">
-                <i class="fas fa-info-circle"></i>
-                Lecture
-              </h4>
-              Un.e Dev. passe beaucoup de temps à lire de la documentation 🤓. Pour trouver la solution à cette étape, il va te falloir aller sur  <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" id="task-nine" class="alert-link">ce site</a>, et essayer d'y trouver l'information dont tu as besoin.
-              <hr>
-              <p class="mb-0">N'hésites surtout pas à essayer differentes propriétés, à te
-                tromper, et puis réessayer avec autre chôse. Ca fait partie du jeux 👩🏽‍💻.</p>
+              <p><i class="fas fa-info-circle"></i>  En Scratch, tu aurais utilisé une boucle "<strong>répéter indéfiniement</strong>" pour arriver à ce résultat.</p>
+            </div>
 
-              </div>
-              <p>👇🏽 Voici une animation qui te montre ce à quoi il faut arriver :</p>
-              <img src="images/align.gif" alt="" class="flexgif">
-              <p class="solution">
-                <button class="btn btn-primary solution-button"
-                type="button"
-                data-toggle="collapse"
-                data-target="#solutionNine"
-                aria-expanded="false"
-                aria-controls="solutionNine"
-                disabled>Solution</button>
-                <span data-toggle="tooltip" title="Pas si vite 😂 Tu dois d'abord lire la documentation 📚, et tester dans ton code!"><i class="fas fa-question"></i></span>
-              </p>
-              <div class="collapse" id="solutionNine">
-                <div class="card card-body">
-                  <ol>
-                    <li>
-                      <p>On va commencer par demander à notre <code class="language-css">#porte-drapeau</code> <small>la boite parent</small> de faire en sorte que l'ensemble de son contenu <small>les boites enfants</small> : <pre><code class="language-html">&lt;div class="partie" id="...">&lt;/div></code></pre> soit centré <strong>horizontalement</strong>, en ajoutant la ligne <code>4</code>.</p>
-                    </li>
-                    <pre class="line-numbers language-css">
-                      <code class="language-css">#porte-drapeau{
-                        ...
-                        display: flex;
-                        justify-content: center;
-                      }</code>
-                    </pre>
-                    <li>
-                      <p>Ensuite on fait la même chôse, mais cette fois on centre les parties <strong>verticalement</strong> en ajoutant cette ligne de code : <code class="language-css">align-items: center;</code> au bon endroit.
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="headingThree">
-              <h2 class="mb-0">
-                <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                  <span>Etape 10 - Agrandir le drapeau avec une animation</span>
-                  <span class="badge badge-dark">Optionnel</span>
-                </button>
-              </h2>
-            </div>
-            <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
-              <div class="card-body">
-                <p>🎉 <strong>Félicitations d'être arrivé aussi loin</strong>!</p>
-                <p>Nous allons maintenant donner plus de hauteur à nos parties, pour que notre drapeau ne soit pas trop plat.</p>
-                <p>👇🏽 Voilà le résultat final : </p>
-                <img class="flexgif" src="images/animate.gif" alt="">
-                <br>
-                <br>
-                <ol>
-                  <li>
-                    <h5><strong>Créer une nouvelle <code class="language-js">class</code>: </strong></h5>
-                    <p>Pour ce faire nous allons commencer par créer une nouvelle <code class="language-css">.class</code> dans notre fichier <code class="language-js">style.css</code>.</p>
-                    <pre class="line-numbers language-css">
-                      <code class="language-css">.hauteur{
-                        height: 700px;
-                      }</code>
-                    </pre>
-                    <p>Mais cette <code class="language-js">class</code> n'a pas encore été attribuée à nos parties dans le fichier <code class="language-js">index.html</code>. C'est fait exprès!</p>
-                  </li>
-                  <br>
-                  <li>
-                   <h5><strong>Ajouter une transition: </strong></h5>
-                   <p>Nous aimerions que le changement de hauteur soit animé. Du coup, il nous faut spécifier quelque part dans notre <code class="language-js">CSS</code> que la transition entre la première hauteur et la nouvelle, se fait en quelque secondes.</p>
-                   <p>Rajoute la ligne <code>3</code> au bon endroit.</p>
-                   <pre class="line-numbers language-css">
-                    <code class="language-css">.partie{
-                      ...
-                      transition: height 2s ease-out;
-                    }</code>
-                  </pre>
-                </li>
-                <br>
-                <li>
-                 <h5><strong>Lancer l'animation: </strong></h5>
-                 <p>Ouvre l'inspecteur (de préference sur <i class="fab fa-chrome"></i>), et selectionne la première partie : </p>
-                 <pre><code class="language-html">&lt;div class="partie" id="noir">&lt;/div></code></pre>
-                 <p>Ajoute manuellement la <code class="language-css">.hauteur</code> a cette partie</p>
-                 <div class="alert alert-primary" role="alert">
-                  <h5>
-                    <i class="fas fa-info-circle"></i>
-                    Comment faire ?
-                  </h5>
-                  <ol>
-                    <li>Selectionne l'élement <code class="langauge-js">HTML</code> que tu veux transformer</li>
-                    <li>Double click sur l'attribut que tu veux changer</li>
-                    <li>Ajoute une nouvelle valeur à cet attribut</li>
-                    <li>Appuye sur <code>Enter</code> pour voir le changement.</li>
-                  </ol>
-                </div>
-                <p>Réplique ce qui est fait 👇🏽 : </p>
-                <img class="flexgif" src="images/inspect.gif" alt="">
-              </li>
-            </ol>
-            <div class="alert alert-warning" role="alert">
-              <h4 class="alert-heading">
-                <i class="fab fa-js"></i>
-                JavaScript
-              </h4>
-              Dans la pratique, les Dev. ne procedent pas de cette facon. Il existe un autre language de programmation, appelé <code class="language-js">JavaScript</code>, qui permet de manipuler les éléments <code class="language-html">HTML</code> automatiquement.
-              <strong>Mais une chôse à la fois 👩🏽‍🚀</strong>.
-            </div>
-          </div>
+
+            <p>👇🏽 Regarde ce qui se passe si je mets tout le code de la fonction <code class="language-js">draw()</code> dans la fonction <code class="language-js">setup()</code>:</p>
+            <img src="images/step9.png" alt="" class="flexgif img-shadow">
+            <p>On ne voit qu'un adjectif!</p>
+            <p>Rappelle-toi ce qu'on disait avant! L'ordinateur n'exécute  la fonction <code class="language-js">setup()</code> qu'une seule fois tandis que la fonction  <code class="language-js">draw()</code> exécutée plusieurs fois par seconde. En général, c'est 60 fois par seconde! Super rapide!</p>
+
+            <p>On va remettre notre code dans la fonction <code class="language-js">draw()</code> on va diminuer la vitesse de défilement et <strong>réduisant le nombre de fois que l'ordinateur exécute la fonction</strong> <code class="language-js">draw()</code> par seconde.</p>
+
+            <p>Il faut utiliser l'instruction <a href="https://p5js.org/reference/#/p5/frameRate"><code class="language-js">frameRate()</code></a> dans la fonction <code class="language-js">setup()</code>. Si tu veux exécuter 5 fois la fonction <code class="language-js">draw()</code> par seconde, par quoi devrais-tu remplacer les XXXX dans ce code?</p>
+
+            <pre><code class="language-js">function setup() {
+  createCanvas(600, 400);
+  frameRate(XXXX);
+}
+          </code></pre>
+
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            <span>Etape 10 - Arrête la boucle!</span>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>🎉 <strong>Félicitations d'être arrivé aussi loin</strong>!</p>
+          <p>Nous allons maintenant faire en sorte que le défilement des adjectifs cesse lorsqu'on clique quelque part sur l'écran.</p>
+          <p>Pour cela il faut créer une nouvelle fonction à la toute fin de notre code:</p>
+          <pre><code class="language-js">function mouseClicked() {
+  noLoop();
+}</code></pre>
+
+          <p>👇🏽 Voilà le résultat final : </p>
+          <img class="flexgif img-shadow" src="images/step10.gif" alt="">
+
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
 
-  <div class="footer">
-    <div class="footer-links">
-      <a href="https://techieslab.be/"><i class="fas fa-globe"></i></i></a>
-      <a href="https://www.facebook.com/TechiesLabBrussels"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/TechiesLab"><i class="fab fa-twitter"></i></a>
-    </div>
-    <div class="footer-copyright">
-      <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" class="alert-link copyright">
-        <i class="far fa-copyright"></i>
-        2020 Techies Lab ASBL. All rights reserved.
-      </a>
-    </div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://techieslab.be/"><i class="fas fa-globe"></i></i></a>
+    <a href="https://www.facebook.com/TechiesLabBrussels"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/TechiesLab"><i class="fab fa-twitter"></i></a>
   </div>
+  <div class="footer-copyright">
+    <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" class="alert-link copyright">
+      <i class="far fa-copyright"></i>
+      2020 Techies Lab ASBL. All rights reserved.
+    </a>
+  </div>
+</div>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <script src="javascript/prism.js"></script>
-  <script type="text/javascript" src="javascript/app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="javascript/prism.js"></script>
+<script type="text/javascript" src="javascript/app.js"></script>
 </body>
 </html>
