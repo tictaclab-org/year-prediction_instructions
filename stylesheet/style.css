@@ -155,3 +155,17 @@ html {
   text-decoration: none;
 }
 
+
+.num-symbol {
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: white;
+  background-color: #007bff;
+}
+
+.num-symbols {
+  display: flex;
+  justify-content: space-around;
+}
+
+

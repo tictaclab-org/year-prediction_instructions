@@ -357,9 +357,201 @@ text('word', 10, 30);
 
         </div>
       </div>
-    </div>
+    </div> <!-- end .card -->
+    <div class="card">
+      <div class="card-header" id="headingEleven">
+        <h2 class="mb-0">
+          <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+            <span>Etape 11 - Change la couleur du texte</span>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+        <div class="card-body">
+          <p><em>Le Rouge et le Noir</em>, c'est pas mal, mais ce n'est peut-être pas ta combinaison de couleurs préférées. En passant, bravo si tu as reconnu <a href="https://fr.wikipedia.org/wiki/Le_Rouge_et_le_Noir" target="_blank">la référence littéraire</a>!</p>
+          <p>Choisir de belles couleurs harmonieuses, c'est tout un défi. Au Techies, on aime beaucoup le <a href="https://coolors.co/">site coolors</a>. Si tu cliques sur le bouton <strong>Start the generator!</strong>, on va te proposer au hasard une palette de couleurs qui vont bien ensemble:</p>
+          <img class="flexgif img-shadow mb-3" src="images/step11.png" alt="Coolors palette">
+
+          <p>Si la palette ne t'inspire pas, appuie sur la touche espace de ton clavier et une nouvelle palette te seras proposée. Tu peux répéter autant de fois que tu le souhaites.</p>
+
+          <p>La palette que je vois m'inspire et je vais prendre la couleur <em>Inchworm</em> pour mon texte et la couleur <em>English violet</em> pour mon arrière plan.</p>
+
+          <p>Au-dessus du nom de chaque couleur, il y a le code de la couleur, ou plus exactement, son <strong>code hexadécimal</strong>. Sais-tu d'où vient ce nom?</p>
+
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Indice</a>
+          </p>
+          <div class="collapse mb-3" id="collapseHint1">
+            <div class="card card-body">
+              <p>Le mot <em>hexadécimal</em> vient du système hexadécimal, un système de numérotation qui utilise 16 symboles.</p>
+              <p>Tu connais déjà le système <em>décimal</em> qui utilise... 10 symboles:</p>
+              <div class="num-symbols">
+                <div class="num-symbol">0</div>
+                <div class="num-symbol">1</div>
+                <div class="num-symbol">2</div>
+                <div class="num-symbol">3</div>
+                <div class="num-symbol">4</div>
+                <div class="num-symbol">5</div>
+                <div class="num-symbol">6</div>
+                <div class="num-symbol">7</div>
+                <div class="num-symbol">8</div>
+                <div class="num-symbol">9</div>
+              </div>
+              <p>Les 16 symboles du système hexadécimal sont les suivants:</p>
+              <div class="num-symbols">
+                <div class="num-symbol">0</div>
+                <div class="num-symbol">1</div>
+                <div class="num-symbol">2</div>
+                <div class="num-symbol">3</div>
+                <div class="num-symbol">4</div>
+                <div class="num-symbol">5</div>
+                <div class="num-symbol">6</div>
+                <div class="num-symbol">7</div>
+                <div class="num-symbol">8</div>
+                <div class="num-symbol">9</div>
+                <div class="num-symbol">A</div>
+                <div class="num-symbol">B</div>
+                <div class="num-symbol">C</div>
+                <div class="num-symbol">D</div>
+                <div class="num-symbol">E</div>
+                <div class="num-symbol">F</div>
+              </div>
+              <p>En hexadécimal, le nombre 11 s'écrit tout simplement <strong>A</strong>. Le nombre 12, c'est <strong>B</strong>, etc. Et le nombre 16? Envoie ta réponse dans le <em>chat</em> de Zoom si tu sais!</p>
+              <p>Tu sais maintenant pourquoi il y a des <strong>F</strong>, des <strong>C</strong>, etc. dans les codes pour les couleurs.</p>
+            </div>
+          </div>
+
+          <p>C'est le code hexadécimal de la couleur que tu vas utiliser dans ton projet. Pour ton arrière-plan, au lieu de:</p>
+          <p><code class="language-js">background('red');</code></p>
+          <p>tu peux utiliser le code hexadécimal précédé d'un dièse (<em>hashtag</em>):</p>
+          <p><code class="language-js">background('#44344f');</code></p>
+
+          <div class="alert alert-warning" role="alert">
+            <p>
+              <i class="fas fa-exclamation-circle"></i>  Comme pour <code class="language-js">'red'</code>, n'oublie pas les apostrophes <code class="language-js">' '</code> autour du code <code class="language-js">#44344f</code>.
+            </p>
+          </div>
+
+          <p>Pour changer la couleur du texte, on peut également utiliser le code hexadécimal avec la fonction <a href="https://p5js.org/reference/#/p5/fill" target="_blank"><code class="language-js">fill()</code></a>.</p> Si tu cliques sur le lien de la fonction <code class="language-js">fill()</code>, tu verras des exemples. Teste-le toi-même! Si tu n'y arrives pas, voici un petit...</p>
+
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
+          </p>
+          <div class="collapse mb-3" id="collapseHint3">
+            <div class="card card-body">
+              <p>Dans ta fonction <code class="language-js">draw()</code>, avant l'instruction <code class="language-js">text()</code>, tu devrais avoir une ligne de code qui ressemble à ceci:</p>
+              <p><code class="language-js">fill('#c2f970');</code></p>
+            </div>
+          </div>
+          <img class="img-shadow" src="images/step11b.png" alt="canvas with new colors">
+        </div>
+      </div>
+    </div> <!-- end .card -->
+    <div class="card">
+      <div class="card-header" id="headingTwelve">
+        <h2 class="mb-0">
+          <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+            <span>Etape 12 - Change la police <i class="fas fa-font"></i></span>
+          </button>
+        </h2>
+      </div>
+      <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+        <div class="card-body">
+          <p>Bien sûr, on parle de police au sens de <em>font</em>, pas au sens de forces de l'ordre!</p>
+          <p>Pour changer de police, cela se fait en plusieurs étapes:</p>
+          <ol>
+            <li>Trouver une police qui nous plaît</li>
+            <li>Télécharger le <em>fichier</em> de la police sur notre ordinateur</li>
+            <li>Charger le fichier de la police dans notre projet p5.js</li>
+            <li>Utiliser la police dans notre code JavaScript</li>
+          </ol>
+
+          <p>Première étape: trouver une police. Tu peux trouver des polices gratuites à plusieurs endroits:</p>
+          <ul>
+            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+            <li><a href="https://www.dafont.com/">dafont.com</a></li>
+          </ul>
+
+          <p>Dans</p>
+          <img class="flexgif img-shadow mb-3" src="images/step11.png" alt="Coolors palette">
+
+          <p>Si la palette ne t'inspire pas, appuie sur la touche espace de ton clavier et une nouvelle palette te seras proposée. Tu peux répéter autant de fois que tu le souhaites.</p>
+
+          <p>La palette que je vois m'inspire et je vais prendre la couleur <em>Inchworm</em> pour mon texte et la couleur <em>English violet</em> pour mon arrière plan.</p>
+
+          <p>Au-dessus du nom de chaque couleur, il y a le code de la couleur, ou plus exactement, son <strong>code hexadécimal</strong>. Sais-tu d'où vient ce nom?</p>
+
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Indice</a>
+          </p>
+          <div class="collapse mb-3" id="collapseHint1">
+            <div class="card card-body">
+              <p>Le mot <em>hexadécimal</em> vient du système hexadécimal, un système de numérotation qui utilise 16 symboles.</p>
+              <p>Tu connais déjà le système <em>décimal</em> qui utilise... 10 symboles:</p>
+              <div class="num-symbols">
+                <div class="num-symbol">0</div>
+                <div class="num-symbol">1</div>
+                <div class="num-symbol">2</div>
+                <div class="num-symbol">3</div>
+                <div class="num-symbol">4</div>
+                <div class="num-symbol">5</div>
+                <div class="num-symbol">6</div>
+                <div class="num-symbol">7</div>
+                <div class="num-symbol">8</div>
+                <div class="num-symbol">9</div>
+              </div>
+              <p>Les 16 symboles du système hexadécimal sont les suivants:</p>
+              <div class="num-symbols">
+                <div class="num-symbol">0</div>
+                <div class="num-symbol">1</div>
+                <div class="num-symbol">2</div>
+                <div class="num-symbol">3</div>
+                <div class="num-symbol">4</div>
+                <div class="num-symbol">5</div>
+                <div class="num-symbol">6</div>
+                <div class="num-symbol">7</div>
+                <div class="num-symbol">8</div>
+                <div class="num-symbol">9</div>
+                <div class="num-symbol">A</div>
+                <div class="num-symbol">B</div>
+                <div class="num-symbol">C</div>
+                <div class="num-symbol">D</div>
+                <div class="num-symbol">E</div>
+                <div class="num-symbol">F</div>
+              </div>
+              <p>En hexadécimal, le nombre 11 s'écrit tout simplement <strong>A</strong>. Le nombre 12, c'est <strong>B</strong>, etc. Et le nombre 16? Envoie ta réponse dans le <em>chat</em> de Zoom si tu sais!</p>
+              <p>Tu sais maintenant pourquoi il y a des <strong>F</strong>, des <strong>C</strong>, etc. dans les codes pour les couleurs.</p>
+            </div>
+          </div>
+
+          <p>C'est le code hexadécimal de la couleur que tu vas utiliser dans ton projet. Pour ton arrière-plan, au lieu de:</p>
+          <p><code class="language-js">background('red');</code></p>
+          <p>tu peux utiliser le code hexadécimal précédé d'un dièse (<em>hashtag</em>):</p>
+          <p><code class="language-js">background('#44344f');</code></p>
+
+          <div class="alert alert-warning" role="alert">
+            <p>
+              <i class="fas fa-exclamation-circle"></i>  Comme pour <code class="language-js">'red'</code>, n'oublie pas les apostrophes <code class="language-js">' '</code> autour du code <code class="language-js">#44344f</code>.
+            </p>
+          </div>
+
+          <p>Pour changer la couleur du texte, on peut également utiliser le code hexadécimal avec la fonction <a href="https://p5js.org/reference/#/p5/fill" target="_blank"><code class="language-js">fill()</code></a>.</p> Si tu cliques sur le lien de la fonction <code class="language-js">fill()</code>, tu verras des exemples. Teste-le toi-même! Si tu n'y arrives pas, voici un petit...</p>
+
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
+          </p>
+          <div class="collapse mb-3" id="collapseHint3">
+            <div class="card card-body">
+              <p>Dans ta fonction <code class="language-js">draw()</code>, avant l'instruction <code class="language-js">text()</code>, tu devrais avoir une ligne de code qui ressemble à ceci:</p>
+              <p><code class="language-js">fill('#c2f970');</code></p>
+            </div>
+          </div>
+          <img class="img-shadow" src="images/step11b.png" alt="canvas with new colors">
+        </div>
+      </div>
+    </div> <!-- end .card -->
   </div>
-</div>
+  </div>
 </div>
 
 <div class="footer">
