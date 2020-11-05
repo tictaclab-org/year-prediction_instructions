@@ -21,12 +21,12 @@
       <div class="main">
         <img src="images/logo.png" alt="">
         <div class="class-title">
-          <h1>En 2020, je serai...</h1>
+          <h1>En 2021, je serai...</h1>
           <h4>intro à P5.js</h4>
         </div>
       </div>
-      <p>Le but de ce défi est de prédire notre année de façon très scientifique, c'est-à-dire à la manière du filtre Instagram "En 2020, je serai..."</p>
-      <p>Si tu visites <a href="projet/project_index.html">cette page</a>, tu verras des mots défiler. Clique n'importe où sur la page pour dévoiler ton mot-clé de 2020.</p>
+      <p>Le but de ce défi est de prédire notre année de façon très scientifique, c'est-à-dire à la manière du filtre Instagram "En 2021, je serai..."</p>
+      <p>Si tu visites <a target="_blank" href="projet/project_index.html">cette page</a>, tu verras des mots défiler. Clique n'importe où sur la page pour dévoiler ton mot-clé de 2021.</p>
       <a class="btn btn-primary tl-button" href="#challenge" role="button">Commencer !</a>
     </div>
   </div>
@@ -57,7 +57,7 @@
 
             <p>Pour te créer un compte:</p>
             <ol>
-              <li><p>Clique sur ce lien <a href="https://editor.p5js.org/">https://editor.p5js.org/</a></p></li>
+              <li><p>Clique sur ce lien <a target="_blank" href="https://editor.p5js.org/">https://editor.p5js.org/</a></p></li>
               <li>Clique sur le lien <strong>Sign up</strong> en haut à droite de la page. Tu auras besoin d'une adresse email.</li>
               <li>Assure-toi de te noter quelque part ton mot de passe si tu n'utilises pas de gestionnaire de mots de passe!</li>
             </ol>
@@ -79,9 +79,12 @@
         </div>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Par défaut, l'éditeur P5.js a nommé mon projet "Chestnut reptile". C'est marrant, mais pas très descriptif de mon projet. Je vais le renommer "En 2020, je serai..."</p>
+            <p>Par défaut, l'éditeur P5.js a nommé mon projet "Nostalgic budget". C'est marrant, mais pas très descriptif de mon projet. Je vais le renommer "En 2021, je serai..." en appuyant sur le petit crayon 🖉: </p>
+            <img class="img-shadow mb-3" src="images/rename_project.png" alt="">
+            <img class="img-shadow mb-3" src="images/renamed_project.png" alt="">
             <p>Toi aussi, renomme ton projet.</p>
             <p>Ensuite, tu as peut-être noté qu'au-dessus du code il y a la mention <strong>sketch.js</strong></p>
+            <img class="img-shadow mb-3" src="images/sketch.png" alt="">
             <p>À ton avis, qu'est-ce que ça fait là?</p>
 
             <p>
@@ -94,7 +97,7 @@
             </div>
 
 
-            <p>À gauche de <strong>sketch.js</strong>, tu as un petite flèche vers la gauche. Clique sur la flèche. Ton projet a plus d'un fichier!</p>
+            <p>À gauche de <strong>sketch.js</strong>, tu as un petite flèche <strong>></strong>. Clique sur la flèche. Ton projet a plus d'un fichier!</p>
 
             <img class="img-shadow mb-3" src="images/step2.png" alt="">
 
@@ -116,10 +119,21 @@
           <div class="card-body">
             <p>Dans la partie code, tu vois deux fonctions: <code class="language-js">setup()</code> et <code class="language-js">draw()</code>. Ce sont les parties les plus importantes de ton animation. Toutes les animations faites avec la librairie P5.js ont ces deux fonctions. D'ailleurs, plusieurs autres librairies d'animation ont des fonctions très similaires.</p>
 
-            <p>Il est SUPER MEGA IMPORTANT de savoir où commence la définition d'une fonction et où elle termine. La définition commence avec l'accolade ouvrante <strong>{</strong> et se termine avec l'accolade fermante <strong>}</strong>. Tout ce qui est entre les deux accolades fait partie de la fonction. </p>
+            <p>Il est SUPER MEGA IMPORTANT de savoir où commence la définition d'une fonction et où elle termine. La définition commence avec l'accolade ouvrante <code class="language-js">{</code> et se termine avec l'accolade fermante <code class="language-js">}</code>. Tout ce qui est entre les deux accolades fait partie de la fonction. </p>
             <p>La fonction <code class="language-js">setup()</code> commence donc à la ligne 1 et se termine à la ligne 3.</p>
 
             <p>Où commence et se termine la fonction <code class="language-js">draw()</code>?</p>
+
+            <p>
+              <a class="btn btn-danger" data-toggle="collapse" href="#collapseAnswer3a" role="button" aria-expanded="false" aria-controls="collapseAnswer3a">Réponse</a>
+            </p>
+            <div class="collapse mb-3" id="collapseAnswer3a">
+              <div class="card card-body">
+                <p>La fonction <code class="language-js">draw()</code> commence à la ligne 5 et se termine à la ligne 7.</p>
+                <p><img class="img-shadow" src="images/draw.png" alt=""></p>
+              </div>
+
+            </div>
 
             <p>La dernière chose à savoir, c'est que la fonction <code class="language-js">setup()</code> ne s'exécute qu'<strong>une</strong> seule fois, tandis que la fonction <code class="language-js">draw()</code> s'exécute <strong>plusieurs</strong> fois par seconde. On va en reparler.</p>
           </div>
@@ -174,7 +188,7 @@
               <p>Le message m'indique également que quelque chose n'est pas une "représentation valide de couleur". En gros, j'ai oublié les apostrophes autour de red.</p>
 
             </div>
-            <p>Défi: Essaie de changer la couleur du canevas en bleu poudre!</p>
+            <p><strong>DÉFI:</strong> Essaie de changer la couleur du canevas en <strong style="color:blue">bleu</strong>! Et <strong style="color:lightblue">bleu pâle</strong>?</p>
           </div>
         </div>
       </div>
@@ -191,7 +205,7 @@
             <p>Commençons par ajouter un seul mot sur notre canevas 💪🏽</p>
             <p>Comment faire? Quelle instruction donner à l'ordinateur?</p>
             <p>Malheureusement, ce n'est pas comme en Scratch où tous les blocs sont regroupés par couleur.</p>
-            <p>Mais, mais, mais... il existe une sorte de dictionnaire de toutes les instructions qui existent dans la librairie P5.js. Ce dictionnaire se trouve à la page <a href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
+            <p>Mais, mais, mais... il existe une sorte de dictionnaire de toutes les instructions qui existent dans la librairie P5.js. Ce dictionnaire se trouve à la page <a target="_blank" href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
 
             <img class="flexgif img-shadow mb-3" src="images/step5.png" alt="">
 
@@ -322,7 +336,7 @@ text('word', 10, 30);
             <p>On ne voit qu'un adjectif!</p>
             <p>Rappelle-toi ce qu'on disait avant! L'ordinateur n'exécute  la fonction <code class="language-js">setup()</code> qu'une seule fois tandis que la fonction  <code class="language-js">draw()</code> exécutée plusieurs fois par seconde. En général, c'est 60 fois par seconde! Super rapide!</p>
 
-            <p>On va remettre notre code dans la fonction <code class="language-js">draw()</code> on va diminuer la vitesse de défilement et <strong>réduisant le nombre de fois que l'ordinateur exécute la fonction</strong> <code class="language-js">draw()</code> par seconde.</p>
+            <p>On va remettre notre code dans la fonction <code class="language-js">draw()</code> et on va diminuer la vitesse de défilement et <strong>réduisant le nombre de fois que l'ordinateur exécute la fonction</strong> <code class="language-js">draw()</code> par seconde.</p>
 
             <p>Il faut utiliser l'instruction <a href="https://p5js.org/reference/#/p5/frameRate"><code class="language-js">frameRate()</code></a> dans la fonction <code class="language-js">setup()</code>. Si tu veux exécuter 5 fois la fonction <code class="language-js">draw()</code> par seconde, par quoi devrais-tu remplacer les XXXX dans ce code?</p>
 
@@ -369,7 +383,7 @@ text('word', 10, 30);
       <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
         <div class="card-body">
           <p><em>Le Rouge et le Noir</em>, c'est pas mal, mais ce n'est peut-être pas ta combinaison de couleurs préférées. En passant, bravo si tu as reconnu <a href="https://fr.wikipedia.org/wiki/Le_Rouge_et_le_Noir" target="_blank">la référence littéraire</a>!</p>
-          <p>Choisir de belles couleurs harmonieuses, c'est tout un défi. Au Techies, on aime beaucoup le <a href="https://coolors.co/">site coolors</a>. Si tu cliques sur le bouton <strong>Start the generator!</strong>, on va te proposer au hasard une palette de couleurs qui vont bien ensemble:</p>
+          <p>Choisir de belles couleurs harmonieuses, c'est tout un défi. Au Techies, on aime beaucoup le <a target="_blank" href="https://coolors.co/">site coolors</a>. Si tu cliques sur le bouton <strong>Start the generator!</strong>, on va te proposer au hasard une palette de couleurs qui vont bien ensemble:</p>
           <img class="flexgif img-shadow mb-3" src="images/step11.png" alt="Coolors palette">
 
           <p>Si la palette ne t'inspire pas, appuie sur la touche espace de ton clavier et une nouvelle palette te seras proposée. Tu peux répéter autant de fois que tu le souhaites.</p>
@@ -432,7 +446,7 @@ text('word', 10, 30);
             </p>
           </div>
 
-          <p>Pour changer la couleur du texte, on peut également utiliser le code hexadécimal avec la fonction <a href="https://p5js.org/reference/#/p5/fill" target="_blank"><code class="language-js">fill()</code></a>.</p> Si tu cliques sur le lien de la fonction <code class="language-js">fill()</code>, tu verras des exemples. Teste-le toi-même! Si tu n'y arrives pas, voici un petit...</p>
+          <p>Pour changer la couleur du texte, on peut également utiliser le code hexadécimal avec la fonction <a href="https://p5js.org/reference/#/p5/fill" target="_blank"><code class="language-js">fill()</code></a>.</p> Si tu cliques sur le lien de la fonction <code class="language-js">fill()</code>, tu verras des exemples. Teste-le toi-même! Si tu n'y arrives pas, voici un petit indice...</p>
 
           <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
@@ -457,89 +471,51 @@ text('word', 10, 30);
       </div>
       <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
         <div class="card-body">
-          <p>Bien sûr, on parle de police au sens de <em>font</em>, pas au sens de forces de l'ordre!</p>
+          <p>Bien sûr, on parle de <strong>police</strong> au sens de type de calligraphie (<em>font</em> en anglais), pas au sens de forces de l'ordre! 👮‍♀️👮🏾</p>
           <p>Pour changer de police, cela se fait en plusieurs étapes:</p>
           <ol>
             <li>Trouver une police qui nous plaît</li>
-            <li>Télécharger le <em>fichier</em> de la police sur notre ordinateur</li>
-            <li>Charger le fichier de la police dans notre projet p5.js</li>
             <li>Utiliser la police dans notre code JavaScript</li>
           </ol>
 
-          <p>Première étape: trouver une police. Tu peux trouver des polices gratuites à plusieurs endroits:</p>
-          <ul>
-            <li><a href="https://fonts.google.com/">Google Fonts</a></li>
-            <li><a href="https://www.dafont.com/">dafont.com</a></li>
-          </ul>
+          <p>Première étape: trouver une police. Tu peux trouver des polices gratuites sur <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>.
 
-          <p>Dans Google Fonts, une fois que tu as trouvé une police qui te plaît, clique sur le bouton <i class="fas fa-plus-circle" style="color: #FA5759"></i>. Au bas de ton écran, tu devrais voir apparaître une boîte noire comme ceci:</p>
-          <img class="img-shadow mb-3" src="images/step12.png" alt="Google fonts">
+          <p>Dans Google Fonts, une fois que tu as trouvé une police qui te plaît, clique sur le bouton <strong>+ Select this style</strong>:
 
-          <p>Clique sur la boîte et tu verras les détails de la police que tu as choisie:</p>
-          <img class="img-shadow mb-3" src="images/step12b.png" alt="Google fonts">
+          <p><img class="img-shadow mb-3" src="images/select_style.png" alt="Google fonts"></p>
 
-          <p>Pour télécharger la police, clique sur le bouton <img src="images/step12c.png" alt="download button"></p>
+          <p>Tu devrais voir apparaître une boîte comme ceci:</p>
+          <img class="img-shadow mb-3" src="images/selected_family.png" alt="Google fonts">
 
-          <p>Sauvegarde le fichier <strong>zip</strong> où tu veux sur ton ordinateur (ça peut être sur le Bureau, par exemple).</p>
+          <p>Copie le bout de code qui commence avec <code>&lt;link href="..."</code></p>
+          <img class="img-shadow mb-3" src="images/link.png" alt="Google fonts">
 
-          <div class="alert alert-warning" role="alert">
-            <p>
-              <i class="far fa-lightbulb"></i>  Un fichier <strong>zip</strong>, c'est un fichier qui stocke plusieurs autres fichiers et qui les compresse (pour qu'ils prennent moins de place). C'est pratique pour télécharger plusieurs fichiers à la fois!</p>
-          </div>
-          <p>Une police, c'est en fait plusieurs fichiers de format <strong>.ttf</strong> ou encore <strong>.otf</strong></p>
+          <p>Et colle-le dans le fichier <strong>index.html</strong>, juste en-dessous de la ligne où tu vois <code>&lt;head></code>:</p>
 
-          <p>Dans mon cas, voici le contenu de mon fichier <strong>zip</strong> avec les différents fichiers <strong>.ttf</strong>:</p>
-          <img class="img-shadow mb-3" src="images/step12d.png" alt="">
 
-          <p>Il y a plusieurs fichiers <strong>.ttf</strong> pour les différentes variations de la police (<em>italiques</em> et <strong>gras</strong>)</p>
-          <p>Je vais extraire tous les fichiers <strong>.ttf</strong> du fichier <strong>zip</strong> et les sauvegarder encore une fois sur le bureau de mon ordinateur.</p>
+          <img class="img-shadow mb-3" src="images/link_html.png" alt="Google fonts">
 
-          <p>Je peux maintenant charger la version normale (<em>Regular</em>) dans mon projet p5.js. Mais avant de le faire, je vais créer un dossier "<strong>assets</strong>":</p>
-          <img class="img-shadow mb-3" src="images/step12e.png" alt="">
-          <div class="alert alert-warning" role="alert">
-            <p>
-              <i class="far fa-lightbulb"></i>  <em>assets</em>, ça veut dire "éléments graphiques" en anglais. C'est le dossier dans lequel on peut mettre de polices, mais aussi des images, des gifs, etc.</p>
-          </div>
+          <p>Copie ensuite le bout de code qui commence avec <code>font-family</code>:</p>
+          <img class="img-shadow mb-3" src="images/font_family.png" alt="Google fonts">
 
-          <p>Dans le dossier <em>assets</em>, charge le fichier de ta police.</p>
-          <img class="img-shadow m-3" src="images/step12f.png" alt="">
-          <img class="img-shadow m-3" src="images/step12g.png" alt="">
+          <p>Et colle-le dans le fichier <strong>style.css</strong> en ajoutant <code language="css">p {}</code>:</p>
 
-          <p>Dernière étape: le JavaScript! Dans ton code, rajoute les lignes suivantes <em>avant le code de la fonction <code class="language-js">setup()</code></em>:</p>
+          <img class="img-shadow mb-3" src="images/p_style.png" alt="Google fonts">
+
+          <p>Dernière étape: le JavaScript! Dans le ficher <strong>sketch.js</strong>, rajoute la ligne suivante dans le code de la fonction <code class="language-js">setup()</code>:</p>
 
           <pre><code class="language-js">
-            let myFont;
-function preload() {
-  myFont = loadFont('assets/XXXX');
-}
+            function setup() {
+            createCanvas(400, 400);
+            textFont("Syne Tactile");
+          }
           </code></pre>
           <div class="alert alert-warning" role="alert">
             <p>
-              <i class="fa fa-exclamation-circle"></i>  Remplace les XXXX par le nom du fichier de ta police. Respecte la casse (les majuscules et les minuscules!)</p>
+              <i class="fa fa-exclamation-circle"></i>  Remplace les <code class="language-js">"Syne Tactile"</code> par le nom de ta police.</p>
           </div>
 
-          <p>Dans ta fonction <code class="language-js">draw()</code>, tu peux maintenant ajouter l'instruction <code class="language-js">textFont()</code>, comme ceci:</p>
-
-          <pre>
-            <code class="language-js">
-              textSize(100);
-              textFont(XXXX);
-            </code>
-          </pre>
-
-          <p>Une fois de plus, tu dois remplacer les XXXX par le nom de la variable dans laquelle on a stocké notre police.</p>
-
-          <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
-          </p>
-          <div class="collapse mb-3" id="collapseHint3">
-            <div class="card card-body">
-              <p>Nous avons créé une variable avec le code suivant: <code class="language-js">let myFont;</code>. Nous avons ensuite donné une valeur avec le code <code class="language-js">myFont = loadFont('assets/ComicNeue-Regular.ttf');</code></p>
-              <p>La fonction <code class="language-js">textFont()</code> s'utilise donc ainsi:</p>
-              <p><code class="language-js">textFont(myFont);</code></p>
-            </div>
-          </div>
-          <img class="img-shadow" src="images/step12h.png" alt="canvas with new font">
+          <img class="img-shadow" src="images/style_result.png" alt="canvas with new font">
         </div>
       </div>
     </div> <!-- end .card -->
@@ -548,13 +524,40 @@ function preload() {
       <div class="card-header" id="headingThirteen">
         <h2 class="mb-0">
           <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-            <span>Etape 13 - Défilement régulier</span>
+            <span>Etape 13 - Partage ton projet avec le monde!🌍</span>
+          </button>
+        </h2>
+
+        <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+          <div class="card-body">
+            <p><strong>Bravo!!!</strong> Tu viens de coder ta première animation en <strong>JavaScript</strong>!</p>
+
+            <p>N'hésite pas à la partager en allant dans le menu <strong>File</strong>, tu verras un bouton <strong>Share</strong>:</p>
+
+            <p><img class="img-shadow" src="images/share.png" alt="Share link"></p>
+
+            <p>Tu peux copier le lien "Present":</p>
+            <p><img class="img-shadow" src="images/present.png" alt="Present link"></p>
+
+            <p>Et l'intégrer dans un post en ajoutant les hashtags #meetandcode et #techieslab :</p>
+            <p><img class="img-shadow" src="images/fb_post.png" alt="FB post"></p>
+
+          </div>
+        </div>
+
+    </div> <!-- end .card -->
+
+    <div class="card">
+      <div class="card-header" id="headingFourteen">
+        <h2 class="mb-0">
+          <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+            Etape 14 - Défilement régulier
             <span class="badge badge-dark">Optionnel</span>
             <span class="badge badge-warning">Difficile 🏆</span>
           </button>
         </h2>
       </div>
-      <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+      <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
         <div class="card-body">
           <p>Tu as peut-être noté que le défilement des mots n'est pas parfaitement régulier. Parfois, on dirait que ça "bloque" sur un mot. Peux-tu deviner pourquoi?</p>
 
@@ -675,7 +678,7 @@ function preload() {
 
         </div>
       </div>
-    </div> <!-- end .card -->
+    </div>  <!-- end of card -->
   </div>
   </div>
 </div>
