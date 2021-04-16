@@ -53,9 +53,9 @@
         </div>
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
           <div class="card-body">
-            <p>P5.js est une librairie JavaScript très chouette pour créer des animations et des jeux sur le web. P5.js a un éditeur de texte en ligne que te permet d'écrire ton code, de le tester, de le sauvegarder et de le partager d'un même endroit. Super pratique!</p>
+            <p>P5.js est une librairie JavaScript très chouette pour créer des animations et des jeux sur le web. P5.js a un éditeur de texte en ligne qui te permet d'écrire ton code, de le tester, de le sauvegarder et de le partager d'un même endroit. Super pratique!</p>
 
-            <p>Pour te créer un compte:</p>
+            <p>Pour créer ton compte:</p>
             <ol>
               <li><p>Clique sur ce lien <a target="_blank" href="https://editor.p5js.org/">https://editor.p5js.org/</a></p></li>
               <li>Clique sur le lien <strong>Sign up</strong> en haut à droite de la page. Tu auras besoin d'une adresse email.</li>
@@ -64,8 +64,8 @@
 
             <p>Une fois ton compte créé, tu devrais arriver sur une page qui ressemble à ceci:</p>
             <img class="flexgif img-shadow mb-3" src="images/step1.png" alt="">
-            <p>Pour ceux qui ont fait du <a href="https://scratch.mit.edu/">Scratch</a>, ça devrait vous sembler familier. Le code à gauche, le résultat à droite, dans l'espace <em>Preview</em>.</p>
-            <p>La grosse différence, c'est que maintenant, le code tu vas l'écrire à la main. Enfin le taper. Il n'y a plus de blocs prêt à être utilisés.</p>
+            <p>Pour ceux qui ont fait du <a href="https://scratch.mit.edu/">Scratch</a>, l’interface p5.js devrait sembler familière. Le code est à gauche et le résultat est à droite, dans l'espace <em>Preview</em>.</p>
+            <p>La grande différence, c'est que maintenant, tu vas écrire ton code à la main. Enfin le taper. Il n'y a plus de blocs prêts à être utilisés.</p>
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@
             <img class="img-shadow mb-3" src="images/rename_project.png" alt="">
             <img class="img-shadow mb-3" src="images/renamed_project.png" alt="">
             <p>Toi aussi, renomme ton projet.</p>
-            <p>Ensuite, tu as peut-être noté qu'au-dessus du code il y a la mention <strong>sketch.js</strong></p>
+            <p>Ensuite, tu as peut-être noté qu'au-dessus du code, il y a la mention <strong>sketch.js</strong></p>
             <img class="img-shadow mb-3" src="images/sketch.png" alt="">
             <p>À ton avis, qu'est-ce que ça fait là?</p>
 
@@ -92,7 +92,7 @@
             </p>
             <div class="collapse mb-3" id="collapseHint1">
               <div class="card card-body">
-                <p><strong>sketch.js</strong>, c'est le nom du fichier de code que tu vas coder. L'extension <strong>.js</strong> signifie que le language de programmation utilisé est le JavaScript. Si le fichier s'était appelé <strong>sketch.py</strong>, le language de programmation aurait été... Python! </p>
+                <p><strong>sketch.js</strong>, c'est le nom du fichier de code que tu vas coder. L'extension <strong>.js</strong> signifie que le langage de programmation utilisé est le JavaScript. Si le fichier s'était appelé <strong>sketch.py</strong>, le langage de programmation aurait été... Python! </p>
               </div>
             </div>
 
@@ -135,7 +135,7 @@
 
             </div>
 
-            <p>La dernière chose à savoir, c'est que la fonction <code class="language-js">setup()</code> ne s'exécute qu'<strong>une</strong> seule fois, tandis que la fonction <code class="language-js">draw()</code> s'exécute <strong>plusieurs</strong> fois par seconde. On va en reparler.</p>
+            <p>La dernière chose à savoir, c'est que la fonction <code class="language-js">setup()</code> ne s'exécute qu'<strong>une</strong> seule fois, tandis que la fonction <code class="language-js">draw()</code> s'exécute <strong>plusieurs</strong> fois par seconde. Nous en reparlerons.</p>
           </div>
         </div>
       </div>
@@ -157,14 +157,14 @@
 
             <p>On va maintenant changer la taille du canevas et sa couleur. Pour la taille, il faut aller dans la fonction <code class="language-js">setup()</code>. Tu vas y voir l'instruction suivante:</p>
             <code class="language-js">createCanvas(400, 400);</code>
-            <p>Ça veut dire "construis un canevas de largeur 400 pixels et de hauteur 400 pixels. Si tu veux changer la largeur à 600 pixels, tu dois écrire ceci: <code class="language-js">createCanvas(600, 400);</code></p>
+            <p>Ça veut dire "construis un canevas de largeur 400 pixels et de hauteur 400 pixels". Si tu veux changer la largeur à 600 pixels, tu dois écrire ceci: <code class="language-js">createCanvas(600, 400);</code></p>
 
             <p>Lance à nouveau ton programme, et tada! notre canevas est maintenant un rectangle.</p>
 
             <p>Pour la couleur, c'est dans la fonction <code class="language-js">draw()</code>. Tu vas y voir l'instruction suivante:<code class="language-js">background(220);</code></p>
 
 
-            <p><strong>220</strong>, c'est le nombre pour l'espèce de gris que tu vois. Remplace ce nombre par un autre nombre. N'importe lequel.</p>
+            <p><strong>220</strong>, c'est le nombre qui représente la teinte de gris que tu vois. Remplace ce nombre par un autre nombre. N'importe lequel.</p>
 
             <p>Plus tu te rapproches de 0, plus on tend vers le... noir. Et pour le blanc?</p>
 
@@ -184,7 +184,7 @@
 
               <img class="flexgif img-shadow mb-3" src="images/step4c.png" alt="">
 
-              <p>La plupart du temps, les messages d'erreur sont très utile pour pouvoir corriger (<em>debugger</em>) notre code. Ici <span style="color: red">sketch: line 6</span> m'indique que mon erreur est à la ligne 6 du fichier <strong>sketch.js</strong></p>
+              <p>La plupart du temps, les messages d'erreur sont très utiles pour pouvoir corriger (<em>debugger</em>) notre code. Ici <span style="color: red">sketch: line 6</span> m'indique que mon erreur est à la ligne 6 du fichier <strong>sketch.js</strong></p>
               <p>Le message m'indique également que quelque chose n'est pas une "représentation valide de couleur". En gros, j'ai oublié les apostrophes autour de red.</p>
 
             </div>
@@ -205,14 +205,14 @@
             <p>Commençons par ajouter un seul mot sur notre canevas 💪🏽</p>
             <p>Comment faire? Quelle instruction donner à l'ordinateur?</p>
             <p>Malheureusement, ce n'est pas comme en Scratch où tous les blocs sont regroupés par couleur.</p>
-            <p>Mais, mais, mais... il existe une sorte de dictionnaire de toutes les instructions qui existent dans la librairie P5.js. Ce dictionnaire se trouve à la page <a target="_blank" href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
+            <p>Mais, mais, mais... il existe une sorte de dictionnaire de toutes les instructions que comprend la librairie P5.js. Ce dictionnaire se trouve à la page <a target="_blank" href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
 
             <img class="flexgif img-shadow mb-3" src="images/step5.png" alt="">
 
             <p>En allant vers le bas de la page, tu verras une section <strong>Typography</strong></p>
             <img class="img-shadow mb-3" src="images/step5b.png" alt="">
 
-            <p>Clique sur l'instruction <strong>text()</strong>. La page est pas mal longue... et en anglais! Malheureusement, presque tout est en anglais quand il s'agit de code. Alors il vaut mieux s'habituer tout de suite, quite à utiliser un dictionnaire!</p>
+            <p>Clique sur l'instruction <strong>text()</strong>. La page est pas mal longue... et en anglais! Malheureusement, presque tout est en anglais quand il s'agit de code. Alors il vaut mieux s'habituer tout de suite, quitte à utiliser un dictionnaire!</p>
 
             <p>Les plages d'explications commencent toujours avec un exemple, ce qui est super utile pour comprendre comment fonctionne une instruction. Le premier exemple commence avec les lignes suivante:</p>
 
@@ -220,7 +220,8 @@
 text('word', 10, 30);
             </code></pre>
 
-            <p>On va les copier et les coller dans la fonction <code class="language-js">draw()</code> de notre code.</p>
+            <p>On va les copier et les coller dans la fonction <code class="language-js">draw()</code> de notre code. Tadam, le mot <em>word</em> apparaît sur notre canevas.
+</p>
 
             <img class="img-shadow mb-3" src="images/step5c.png" alt="">
             <div class="alert alert-primary" role="alert">
@@ -248,11 +249,11 @@ text('word', 10, 30);
         </div>
         <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
           <div class="card-body">
-            <p>En n'ajoutant aucune ligne à ton code, mais en changeant quelques paramètres, peux-tu faire en sorte d'afficher le mot de ton choix (plutôt que 'word'), d'aggrandir la police et... de déplacer le mot vers le centre du canevas?</p>
+            <p>En n'ajoutant aucune ligne à ton code, mais en changeant quelques paramètres, peux-tu faire en sorte d'afficher le mot de ton choix (plutôt que 'word'), d'agrandir la police et... de déplacer le mot vers le centre du canevas?</p>
             <img class="flexgif img-shadow mb-3" src="images/step6.png" alt="">
             <div class="alert alert-warning" role="alert">
               <p>
-                <i class="fas fa-exclamation-circle"></i>  Avant de passer à l'étape suivante, valide ton code avec un des instructeurs.
+                <i class="fas fa-exclamation-circle"></i>  Avant de passer à l'étape suivante, valide ton code avec tes animateurs.
               </p>
             </div>
           </div>
@@ -268,9 +269,9 @@ text('word', 10, 30);
         </div>
         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Pour que notre animation fonctionne, il nous faut plusieurs adjectifs qui vont défiler en permanence jusqu'à ce que le visiteur clique quelque part.</p>
+            <p>Pour que notre animation fonctionne, il nous faut plusieurs adjectifs qui vont défiler en permanence jusqu'à ce qu'on clique quelque part sur le canevas.</p>
 
-            <p>En JavaScript, une liste de choses, ça s'écrit avec des <strong>crochets</strong> <code class="language-js">[ ]</code>. Chaque item dans la liste est séparé par une <strong>virgule</strong> <code class="language-js">,</code>. Si tu veux une liste d'adjectifs, ça s'écrit comme ceci: <code class="language-js">['téméraire', 'gentil', 'stylé']</code>. Note qu'ici aussi, on utilise des apostrophes autour de chaque adjectif. C'est important!</p>
+            <p>En JavaScript, une liste de mots, ça s'écrit avec des <strong>crochets</strong> <code class="language-js">[ ]</code>. Chaque item dans la liste est séparé par une <strong>virgule</strong> <code class="language-js">,</code>. Si tu veux une liste d'adjectifs, ça s'écrit comme ceci: <code class="language-js">['téméraire', 'gentil', 'stylé']</code>. Note qu'ici aussi, on utilise des apostrophes autour de chaque adjectif. C'est important!</p>
 
             <p>Notre liste faite, il faut la stocker dans une variable pour que l'ordinateur s'en rappelle et qu'on puisse la réutiliser plusieurs fois dans nos instructions. Voici comment on stocke dans une variable en JavaScript:</p>
 
@@ -278,9 +279,9 @@ text('word', 10, 30);
 
             <p><code class="language-js">const</code> ça veut dire constante (ou variable)</p>
             <p><code class="language-js">adjectives</code> c'est le nom de notre variable (les pros écrivent leurs noms de variables en anglais)</p>
-            <p>le <code class="language-js">=</code> ça veut dire "stocke la valeur"</p>
+            <p>le symbole égal<code class="language-js">=</code> ça veut dire "stocke la valeur"</p>
             <p><code class="language-js">['téméraire', 'gentil', 'stylé']</code> c'est notre liste et...</p>
-            <p>le <code class="language-js">;</code> c'est la fin de notre instruction!</p>
+            <p>le point-virgule <code class="language-js">;</code> c'est la fin de notre instruction!</p>
             <p>Tu peux placer le code de ta variable juste avant l'instruction <code class="language-js">text()</code>, dans la fonction <code class="language-js">draw()</code></p>
           </div>
         </div>
@@ -327,7 +328,7 @@ text('word', 10, 30);
           <div class="card-body">
             <p>Nous voyons plusieurs adjectifs défiler hyper rapidement! Pourtant nous n'avons pas donné des milliers d'instructions à l'ordinateur pour qu'il le fasse.</p>
             <div class="alert alert-primary" role="alert">
-              <p><i class="fas fa-info-circle"></i>  En Scratch, tu aurais utilisé une boucle "<strong>répéter indéfiniement</strong>" pour arriver à ce résultat.</p>
+              <p><i class="fas fa-info-circle"></i>  En Scratch, tu aurais utilisé une boucle "<strong>répéter indéfiniment</strong>" pour arriver à ce résultat.</p>
             </div>
 
 
@@ -386,7 +387,7 @@ text('word', 10, 30);
           <p>Choisir de belles couleurs harmonieuses, c'est tout un défi. Au Techies, on aime beaucoup le <a target="_blank" href="https://coolors.co/">site coolors</a>. Si tu cliques sur le bouton <strong>Start the generator!</strong>, on va te proposer au hasard une palette de couleurs qui vont bien ensemble:</p>
           <img class="flexgif img-shadow mb-3" src="images/step11.png" alt="Coolors palette">
 
-          <p>Si la palette ne t'inspire pas, appuie sur la touche espace de ton clavier et une nouvelle palette te seras proposée. Tu peux répéter autant de fois que tu le souhaites.</p>
+          <p>Si la palette ne t'inspire pas, appuie sur la touche espace de ton clavier et une nouvelle palette te sera proposée. Tu peux répéter autant de fois que tu le souhaites.</p>
 
           <p>La palette que je vois m'inspire et je vais prendre la couleur <em>Inchworm</em> pour mon texte et la couleur <em>English violet</em> pour mon arrière plan.</p>
 
@@ -502,7 +503,7 @@ text('word', 10, 30);
 
           <img class="img-shadow mb-3" src="images/p_style.png" alt="Google fonts">
 
-          <p>Dernière étape: le JavaScript! Dans le ficher <strong>sketch.js</strong>, rajoute la ligne suivante dans le code de la fonction <code class="language-js">setup()</code>:</p>
+          <p>Dernière étape: le JavaScript! Dans le fichier <strong>sketch.js</strong>, rajoute la ligne suivante dans le code de la fonction <code class="language-js">setup()</code>:</p>
 
           <pre><code class="language-js">
             function setup() {
@@ -654,7 +655,7 @@ text('word', 10, 30);
           <p>Nos trois premiers mots apparaissent, et puis plus rien! Si tu as gardé l'instruction <code class="language-js">console.log(index);</code>, tu peux voir le message d'erreur suivant dans la console:</p>
           <img class="img-shadow" src="images/step13f.png" alt="canvas with new font">
 
-          <p>L'ordinateur se pleint à partir de l'index <strong>3</strong>. Normal, il n'y a aucun mot qui correspond à l'index 3 dans ma liste, car ma liste ne comprend que 3 adjectifs! Le dernier index, c'est l'index <strong>2</strong>.</p>
+          <p>L'ordinateur se plaint à partir de l'index <strong>3</strong>. Normal, il n'y a aucun mot qui correspond à l'index 3 dans ma liste, car ma liste ne comprend que 3 adjectifs! Le dernier index, c'est l'index <strong>2</strong>.</p>
 
           <p>Du coup, il faut empêcher l'ordinateur d'ajouter un à la variable index, si la variable a déjà la valeur du dernier index de la liste. Voici comment on écrit une <strong>condition</strong> en JavaScript:</p>
 
