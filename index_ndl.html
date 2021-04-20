@@ -200,44 +200,44 @@
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Etape 5 - Ajoute du texte à ton canevas
+              Stap 5 - Voeg tekst toe aan je canvas
             </button>
           </h2>
         </div>
         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Commençons par ajouter un seul mot sur notre canevas 💪🏽</p>
-            <p>Comment faire? Quelle instruction donner à l'ordinateur?</p>
-            <p>Malheureusement, ce n'est pas comme en Scratch où tous les blocs sont regroupés par couleur.</p>
-            <p>Mais, mais, mais... il existe une sorte de dictionnaire de toutes les instructions que comprend la librairie P5.js. Ce dictionnaire se trouve à la page <a target="_blank" href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
+
+            <p>Laten we beginnen met één enkel woord toe te voegen aan ons canvas 💪🏽</p>
+            <p>Hoe doen we dit? Welke instructie moet ik de computer geven?</p>
+            <p>Helaas is het niet zoals in Scratch, waar alle blokken op kleur zijn gegroepeerd.</p>
+            <p>Maar, maar, maar... er bestaat een soort woordenboek van alle instructies die de P5.js bibliotheek bevat. Dit woordenboek is te vinden op <a target="_blank" href="https://p5js.org/reference/">https://p5js.org/reference/</a></p>
 
             <img class="flexgif img-shadow mb-3" src="images/step5.png" alt="">
 
-            <p>En allant vers le bas de la page, tu verras une section <strong>Typography</strong></p>
+            <p>Wanneer je naar de onderkant van de pagina gaat, zul je een <strong>Typography</strong> sectie zien:</p>
             <img class="img-shadow mb-3" src="images/step5b.png" alt="">
 
-            <p>Clique sur l'instruction <strong>text()</strong>. La page est pas mal longue... et en anglais! Malheureusement, presque tout est en anglais quand il s'agit de code. Alors il vaut mieux s'habituer tout de suite, quitte à utiliser un dictionnaire!</p>
+            <p>Klik op de <strong>text()</strong> instructie. De pagina is vrij lang... en in het Engels! Helaas staat bijna alles in het Engels als het op code aankomt. Het is dus beter om er meteen aan te wennen, ook wanneer dit betekent dat je een woordenboek moet gebruiken!</p>
 
-            <p>Les plages d'explications commencent toujours avec un exemple, ce qui est super utile pour comprendre comment fonctionne une instruction. Le premier exemple commence avec les lignes suivante:</p>
+            <p>De uitleg begint altijd met een voorbeeld, wat zeer nuttig is om te begrijpen hoe een instructie werkt. Het eerste voorbeeld begint met de volgende regels:</p>
 
             <pre><code class="language-js">textSize(32);
 text('word', 10, 30);
             </code></pre>
 
-            <p>On va les copier et les coller dans la fonction <code class="language-js">draw()</code> de notre code. Tadam, le mot <em>word</em> apparaît sur notre canevas.
-</p>
+            <p>We gaan deze kopiëren en plakken in de <code class="language-js">draw()</code> functie van onze code. Tadam, het woord <em>word</em> verschijnt op ons canvas.</p>
 
             <img class="img-shadow mb-3" src="images/step5c.png" alt="">
             <div class="alert alert-primary" role="alert">
-              🤔 À ton avis, pourquoi ce code ne marche-t-il pas?
+              🤔 Waarom denk je dat deze code niet werkt?
               <img class="flexgif img-shadow mb-3" src="images/step5d.png" alt="">
             </div>
             <p>
-              <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Indice</a>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Hint</a>
             </p>
             <div class="collapse mb-3" id="collapseHint1">
               <div class="card card-body">
-                <p>Parce que les instructions <code class="language-js">textSize()</code> et <code class="language-js">text()</code> sont à l'<strong>extérieur</strong> de la fonction <code class="language-js">draw()</code> qui se termine à la ligne 7.</p>
+                <p>Omdat de <code class="language-js">textSize()</code> en <code class="language-js">text()</code> instructies <strong>buiten</strong> de <code class="language-js">draw()</code> functie vallen, die eindigt op regel 7.</p>
               </div>
             </div>
           </div>
@@ -398,7 +398,7 @@ text('word', 10, 30);
           <p>Au-dessus du nom de chaque couleur, il y a le code de la couleur, ou plus exactement, son <strong>code hexadécimal</strong>. Sais-tu d'où vient ce nom?</p>
 
           <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Indice</a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Hint</a>
           </p>
           <div class="collapse mb-3" id="collapseHint1">
             <div class="card card-body">
@@ -454,7 +454,7 @@ text('word', 10, 30);
           <p>Pour changer la couleur du texte, on peut également utiliser le code hexadécimal avec la fonction <a href="https://p5js.org/reference/#/p5/fill" target="_blank"><code class="language-js">fill()</code></a>.</p> Si tu cliques sur le lien de la fonction <code class="language-js">fill()</code>, tu verras des exemples. Teste-le toi-même! Si tu n'y arrives pas, voici un petit indice...</p>
 
           <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Hint</a>
           </p>
           <div class="collapse mb-3" id="collapseHint3">
             <div class="card card-body">
@@ -567,7 +567,7 @@ text('word', 10, 30);
           <p>Tu as peut-être noté que le défilement des mots n'est pas parfaitement régulier. Parfois, on dirait que ça "bloque" sur un mot. Peux-tu deviner pourquoi?</p>
 
           <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint4" role="button" aria-expanded="false" aria-controls="collapseHint4">Indice</a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint4" role="button" aria-expanded="false" aria-controls="collapseHint4">Hint</a>
           </p>
           <div class="collapse mb-3" id="collapseHint4">
             <div class="card card-body">
@@ -648,7 +648,7 @@ text('word', 10, 30);
           <p>Conclusion: on ne peut pas garder l'instruction <code class="language-js">let index = 0;</code> dans la fonction <code class="language-js">draw()</code> Cette instruction ne doit s'exécuter qu'une seule fois! À ton avis, où doit-on placer cette instruction dans notre code?</p>
 
           <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Hint</a>
           </p>
           <div class="collapse mb-3" id="collapseHint3">
             <div class="card card-body">
