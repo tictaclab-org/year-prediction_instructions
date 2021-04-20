@@ -126,19 +126,19 @@
 
             <p>Dus de <code class="language-js">setup()</code> functie begint op regel 1 en eindigt op regel 3.</p>
 
-            <p>Waar begint en eindigt de <code class="language-js">draw()</code>functie?</p>
+            <p>Waar begint en eindigt de <code class="language-js">draw()</code> functie?</p>
 
             <p>
-              <a class="btn btn-danger" data-toggle="collapse" href="#collapseAnswer3a" role="button" aria-expanded="false" aria-controls="collapseAnswer3a">Réponse</a>
+              <a class="btn btn-danger" data-toggle="collapse" href="#collapseAnswer3a" role="button" aria-expanded="false" aria-controls="collapseAnswer3a">Antwoord</a>
             </p>
             <div class="collapse mb-3" id="collapseAnswer3a">
               <div class="card card-body">
-                <p>De <code class="language-js">draw()</code> functie begint op regel 5 en eindigt op regel 7.La fonction  commence à la ligne 5 et se termine à la ligne 7.</p>
+                <p>De <code class="language-js">draw()</code> functie begint op regel 5 en eindigt op regel 7.</p>
                 <p><img class="img-shadow" src="images/draw.png" alt=""></p>
               </div>
             </div>
 
-            <p>Het laatste wat je moet weten is dat de <code class="language-js">setup()</code> functie maar <strong>één</strong> keer wordt uitgevoerd, terwijl de <code class="language-js">draw()</code> functie <strong>meerdere</strong> keren per seconde wordt uitgevoerd.Daar hebben we het later nog wel over.</p>
+            <p>Het laatste wat je moet weten is dat de <code class="language-js">setup()</code> functie maar <strong>één</strong> keer wordt uitgevoerd, terwijl de <code class="language-js">draw()</code> functie <strong>meerdere</strong> keren per seconde wordt uitgevoerd. Daar hebben we het later nog wel over.</p>
           </div>
         </div>
       </div>
@@ -146,36 +146,35 @@
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Etape 4 - Lance le programme et change quelques paramètres
-            </button>
+              Stap 4 - Start het programma en verander enkele parameters</button>
           </h2>
         </div>
         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Pour lancer notre programme, rien de plus facile: il faut cliquer sur le bouton "Play".</p>
+            <p>Om ons programma te starten, is niets eenvoudiger: klik op de "Play" knop.</p>
             <img class="img-shadow mb-3" src="images/step4.png" alt="">
 
-            <p>Note que notre canevas (l'espace <strong>Preview</strong>) est devenu gris pâle et a la forme d'un carré:</p>
+            <p>Merk op dat ons canvas (het <strong>Preview</strong> gebied) lichtgrijs is geworden en de vorm heeft van een vierkant:</p>
             <img class="flexgif img-shadow mb-3" src="images/step4b.png" alt="">
 
-            <p>On va maintenant changer la taille du canevas et sa couleur. Pour la taille, il faut aller dans la fonction <code class="language-js">setup()</code>. Tu vas y voir l'instruction suivante:</p>
+            <p>We zullen nu de grootte en de kleur van het canvas aanpassen. Voor de grootte, moeten we naar de <code class="language-js">setup()</code> functie gaan. Daar zie je de volgende instructie:</p>
             <code class="language-js">createCanvas(400, 400);</code>
-            <p>Ça veut dire "construis un canevas de largeur 400 pixels et de hauteur 400 pixels". Si tu veux changer la largeur à 600 pixels, tu dois écrire ceci: <code class="language-js">createCanvas(600, 400);</code></p>
+            <p>Dat betekent "bouw een canvas met breedte 400 pixels en hoogte 400 pixels". Wil je de breedte veranderen in 600 pixels, dan schrijf  je het volgende: <code class="language-js">createCanvas(600, 400);</code></p>
 
-            <p>Lance à nouveau ton programme, et tada! notre canevas est maintenant un rectangle.</p>
+            <p>Start je programma opnieuw, en tada! ons canvas is nu een rechthoek.</p>
 
-            <p>Pour la couleur, c'est dans la fonction <code class="language-js">draw()</code>. Tu vas y voir l'instruction suivante:<code class="language-js">background(220);</code></p>
+            <p>Om de kleur aan te passen, gebruiken we de <code class="language-js">draw()</code> functie. Je zal de volgende instructie zien: <code class="language-js">background(220);</code></p>
 
 
-            <p><strong>220</strong>, c'est le nombre qui représente la teinte de gris que tu vois. Remplace ce nombre par un autre nombre. N'importe lequel.</p>
+            <p><strong>220</strong> is het getal dat de grijstint die je ziet, aangeeft. Vervang dit nummer door een ander nummer. Een willekeurig nummer.</p>
 
-            <p>Plus tu te rapproches de 0, plus on tend vers le... noir. Et pour le blanc?</p>
+            <p>Hoe dichter je bij 0 komt, hoe meer we neigen naar... zwart. Hoe zit het met wit?</p>
 
-            <p>À la place d'un nombre, essaie ceci: <code class="language-js">'red'</code></p>
+            <p>In plaats van een nummer, probeer dit: <code class="language-js">'red'</code></p>
             <div class="alert alert-warning" role="alert">
               <p>
                 <i class="fas fa-exclamation-circle"></i>
-                N'oublie pas les apostrophes <code class="language-js">' '</code> autour du mot <code class="language-js">red</code>. D'ailleurs, si tu les oublies et que tu écris ceci:
+                Vergeet de apostrofs <code class="language-js">' '</code> rond het woord <code class="language-js">red</code> niet. Trouwens, indien je ze vergeet en dit schrijft:
               </p>
               <pre class="language-js">
                 <code class="language-js">function draw() {
@@ -183,15 +182,17 @@
                 }</code>
               </pre>
               <hr>
-              <p>quand tu vas exécuter ton code, tu vas voir que la console au bas de l'écran va t'envoyer un message <span style="color: red">Error</span>:</p>
+              <p>wanneer je jouw code uitvoert, zal je zien dat de console onderaan het scherm je een <span style="color: red">Error</span> bericht zal geven:</p>
 
               <img class="flexgif img-shadow mb-3" src="images/step4c.png" alt="">
 
-              <p>La plupart du temps, les messages d'erreur sont très utiles pour pouvoir corriger (<em>debugger</em>) notre code. Ici <span style="color: red">sketch: line 6</span> m'indique que mon erreur est à la ligne 6 du fichier <strong>sketch.js</strong></p>
-              <p>Le message m'indique également que quelque chose n'est pas une "représentation valide de couleur". En gros, j'ai oublié les apostrophes autour de red.</p>
+              <p>Meestal zijn foutmeldingen erg nuttig om onze code te kunnen verbeteren (<em>debuggen</em>). Hier vertelt <span style="color: red">sketch: line 6</span> me dat mijn fout op lijn 6 van het <strong>sketch.js</strong> bestand zit.</p>
+
+              <p>De boodschap toont me ook dat iets geen "geldige kleurweergave" is. Kortom, ik vergat de apostrofs rond red.</p>
 
             </div>
-            <p><strong>DÉFI:</strong> Essaie de changer la couleur du canevas en <strong style="color:blue">bleu</strong>! Et <strong style="color:lightblue">bleu pâle</strong>?</p>
+
+            <p>Probeer de kleur van het canvas te veranderen in <strong style="color:blue">blauw</strong>! Wat dacht je van <strong style="color:lightblue">lichtblauw</strong>?</p>
           </div>
         </div>
       </div>
