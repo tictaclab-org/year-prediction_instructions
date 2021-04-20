@@ -323,26 +323,25 @@ text('word', 10, 30);
         <div class="card-header" id="headingNine">
           <h2 class="mb-0" id="step9">
             <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-              <span>Etape 9 - Fais défiler les adjectifs plus lentement</span>
+              <span>Stap 9 - Laat de bijvoeglijke naamwoorden langzamer flitsen</span>
             </button>
           </h2>
         </div>
         <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
           <div class="card-body">
-            <p>Nous voyons plusieurs adjectifs défiler hyper rapidement! Pourtant nous n'avons pas donné des milliers d'instructions à l'ordinateur pour qu'il le fasse.</p>
+            <p>We zien verschillende bijvoeglijke naamwoorden supersnel voorbij scrollen! Nochtans hebben we de computer geen duizend verschillende instructies gegeven om dit te doen.</p>
             <div class="alert alert-primary" role="alert">
-              <p><i class="fas fa-info-circle"></i>  En Scratch, tu aurais utilisé une boucle "<strong>répéter indéfiniment</strong>" pour arriver à ce résultat.</p>
+              <p><i class="fas fa-info-circle"></i>  In Scratch zou je een "<strong>herhaal oneindig</strong>" lus hebben gebruikt om dit resultaat te bereiken.</p>
             </div>
 
 
-            <p>👇🏽 Regarde ce qui se passe si je mets tout le code de la fonction <code class="language-js">draw()</code> dans la fonction <code class="language-js">setup()</code>:</p>
+            <p>👇🏽 Kijk wat er gebeurt als ik alle code van de <code class="language-js">draw()</code> functie in de <code class="language-js">setup()</code> functie zet:</p>
             <img src="images/step9.png" alt="" class="flexgif img-shadow">
-            <p>On ne voit qu'un adjectif!</p>
-            <p>Rappelle-toi ce qu'on disait avant! L'ordinateur n'exécute  la fonction <code class="language-js">setup()</code> qu'une seule fois tandis que la fonction  <code class="language-js">draw()</code> exécutée plusieurs fois par seconde. En général, c'est 60 fois par seconde! Super rapide!</p>
+            <p><code class="language-js">setup()</code></p>
+            <p>Herinner je wat we eerder zeiden! De computer voert de <code class="language-js">setup()</code>-functie slechts eenmaal uit, terwijl de <code class="language-js">draw()</code>-functie verscheidene malen per seconde wordt uitgevoerd. Meestal is het 60 keer per seconde! Super snel!</p>
 
-            <p>On va remettre notre code dans la fonction <code class="language-js">draw()</code> et on va diminuer la vitesse de défilement et <strong>réduisant le nombre de fois que l'ordinateur exécute la fonction</strong> <code class="language-js">draw()</code> par seconde.</p>
-
-            <p>Il faut utiliser l'instruction <a href="https://p5js.org/reference/#/p5/frameRate"><code class="language-js">frameRate()</code></a> dans la fonction <code class="language-js">setup()</code>. Si tu veux exécuter 5 fois la fonction <code class="language-js">draw()</code> par seconde, par quoi devrais-tu remplacer les XXXX dans ce code?</p>
+            <p>We plaatsen onze code terug in de <code class="language-js">draw()</code> functie en we <strong>verlagen de scrolsnelheid en het aantal keren</strong> dat de computer de <code class="language-js">draw()</code> functie per seconde uitvoert.</p>
+            <p>Je moet het <a href="https://p5js.org/reference/#/p5/frameRate"><code class="language-js">frameRate()</code></a> statement gebruiken in de <code class="language-js">setup()</code> functie. Als je dus de <code class="language-js">draw()</code> functie 5 keer per seconde wilt laten draaien, door wat moet je dan de XXXX in deze code vervangen?</p>
 
             <pre><code class="language-js">function setup() {
   createCanvas(600, 400);
