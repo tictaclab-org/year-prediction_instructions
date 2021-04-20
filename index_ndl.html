@@ -469,44 +469,42 @@ text('word', 10, 30);
       <div class="card-header" id="headingTwelve">
         <h2 class="mb-0">
           <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-            <span>Etape 12 - Change la police <i class="fas fa-font"></i></span>
+            <span>Stap 12 - Wijzig het lettertype <i class="fas fa-font"></i></span>
           </button>
         </h2>
       </div>
       <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
         <div class="card-body">
-          <p>Bien sûr, on parle de <strong>police</strong> au sens de type de calligraphie (<em>font</em> en anglais), pas au sens de forces de l'ordre! 👮‍♀️👮🏾</p>
-          <p>Pour changer de police, cela se fait en plusieurs étapes:</p>
+          <p>Het wijzigen van het lettertype (<em>font</em> in het Engels) gebeurt in verschillende stappen:</p>
           <ol>
-            <li>Trouver une police qui nous plaît</li>
-            <li>Utiliser la police dans notre code JavaScript</li>
+            <li>Het vinden van een leuk lettertype</li>
+            <li>Dat lettertype gebruiken in onze JavaScript code</li>
           </ol>
 
-          <p>Première étape: trouver une police. Tu peux trouver des polices gratuites sur <a target="_blank" href="https://fonts.google.com/">Google Fonts</a>.
+          <p>Eerste stap: zoek een lettertype. Op <a target="_blank" href="https://fonts.google.com/">Google Fonts</a> kan je gratis verschillende fonts vinden.</p>
 
-          <p>Dans Google Fonts, une fois que tu as trouvé une police qui te plaît, clique sur le bouton <strong>+ Select this style</strong>:
+          <p>Zodra je in Google Fonts een lettertype gekozen hebt, klik je op de knop <strong>+ Select this style</strong>:
 
           <p><img class="img-shadow mb-3" src="images/select_style.png" alt="Google fonts"></p>
 
-          <p>Tu devrais voir apparaître une boîte comme ceci:</p>
+          <p>Je zou een doos als deze moeten zien verschijnen:</p>
           <img class="img-shadow mb-3" src="images/selected_family.png" alt="Google fonts">
 
-          <p>Copie le bout de code qui commence avec <code>&lt;link href="..."</code></p>
+          <p>Kopieer het stukje code dat begint met <code>&lt;link href="..."</code></p>
           <img class="img-shadow mb-3" src="images/link.png" alt="Google fonts">
 
-          <p>Et colle-le dans le fichier <strong>index.html</strong>, juste en-dessous de la ligne où tu vois <code>&lt;head></code>:</p>
-
+          <p>En plak het in het <strong>index.html</strong> bestand, net onder de regel waar je <code>&lt;head></code> ziet:</p>
 
           <img class="img-shadow mb-3" src="images/link_html.png" alt="Google fonts">
 
-          <p>Copie ensuite le bout de code qui commence avec <code>font-family</code>:</p>
+          <p>Vervolgens kopieer je het stukje code dat begint met <code>font-family</code>:</p>
           <img class="img-shadow mb-3" src="images/font_family.png" alt="Google fonts">
 
-          <p>Et colle-le dans le fichier <strong>style.css</strong> en ajoutant <code language="css">p {}</code>:</p>
+          <p>Plak dit in het <strong>style.css</strong> bestand, en voeg <code language="css">p {}</code> toe:</p>
 
           <img class="img-shadow mb-3" src="images/p_style.png" alt="Google fonts">
 
-          <p>Dernière étape: le JavaScript! Dans le fichier <strong>sketch.js</strong>, rajoute la ligne suivante dans le code de la fonction <code class="language-js">setup()</code>:</p>
+          <p>Laatste stap: het JavaScript! Voeg in het bestand <strong>sketch.js</strong> de volgende regel toe aan de code van de <code class="language-js">setup()</code> functie:</p>
 
           <pre><code class="language-js">
             function setup() {
@@ -516,7 +514,7 @@ text('word', 10, 30);
           </code></pre>
           <div class="alert alert-warning" role="alert">
             <p>
-              <i class="fa fa-exclamation-circle"></i>  Remplace les <code class="language-js">"Syne Tactile"</code> par le nom de ta police.</p>
+              <i class="fa fa-exclamation-circle"></i>  Vervang de <code class="language-js">"Syne Tactile"</code> door de naam van jouw lettertype.</p>
           </div>
 
           <img class="img-shadow" src="images/style_result.png" alt="canvas with new font">
