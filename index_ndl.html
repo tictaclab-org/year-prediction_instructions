@@ -554,56 +554,55 @@ text('word', 10, 30);
         <h2 class="mb-0">
           <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
             Stap 14 - Regelmatig scrollen
-            <span class="badge badge-dark">Optionnel</span>
-            <span class="badge badge-warning">Difficile 🏆</span>
+            <span class="badge badge-dark">Optioneel</span>
+            <span class="badge badge-warning">Moeilijk 🏆</span>
           </button>
         </h2>
       </div>
       <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
         <div class="card-body">
-          <p>Tu as peut-être noté que le défilement des mots n'est pas parfaitement régulier. Parfois, on dirait que ça "bloque" sur un mot. Peux-tu deviner pourquoi?</p>
+          <p>Het is je misschien opgevallen dat het scrollen van de woorden niet perfect regelmatig is. Soms lijkt de animatie te "bevriezen" op een woord. Kan je raden waarom?</p>
 
           <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint4" role="button" aria-expanded="false" aria-controls="collapseHint4">Hint</a>
           </p>
           <div class="collapse mb-3" id="collapseHint4">
             <div class="card card-body">
-              <p>Le problème, c'est que nous utilisons la fonction <code class="language-js">random()</code> pour choisir aléatoirement les mots à afficher.</p>
-              <p>L'ordinateur pourrait aléatoirement choisir les mots dans cet ordre:</p>
+              <p>Het probleem is dat we de <code class="language-js">random()</code> functie gebruiken om willekeurig de woorden te kiezen die weergeven worden.</p>
+              <p>De computer kan willekeurig de woorden in deze volgorde weergeven:</p>
               <ol>
-                <li>gentil</li>
-                <li>stylé</li>
-                <li>téméraire</li>
-                <li>téméraire</li>
-                <li>téméraire</li>
-                <li>gentil</li>
+                <li>leuk</li>
+                <li>stijlvol</li>
+                <li>roekeloos</li>
+                <li>roekeloos</li>
+                <li>roekeloos</li>
+                <li>leuk</li>
               </ol>
 
-              <p>Comme il a choisi trois fois d'affilée le mot "téméraire", le mot va apparaître à l'écran plus longtemps.</p>
+              <p>Omdat hij het woord "roekeloos" drie keer achter elkaar koos, zal dat woord langer op het scherm weergegeven worde</p>
             </div>
           </div>
 
-          <p>Deux solutions sont envisageables:</p>
+          <p>Er zijn twee mogelijke oplossingen:</p>
           <ol>
-            <li>On continue de choisir les mots aléatoirement, mais si le mot choisi est le même que le précédent, alors on en choisit un autre.</li>
-            <li>On fait défiler les mots dans l'ordre de notre liste et lorsqu'on arrive à la fin de la liste, on recommence au début.</li>
+            <li>We blijven de woorden willekeurig kiezen, maar als het gekozen woord hetzelfde is als het vorige, dan kiezen we een ander woord.</li>
+            <li>We laten de woorden scrollen in de volgorde van onze lijst. Wanneer we aan het eind van de lijst komen, beginnen we weer bij het begin.</li>
           </ol>
 
-          <p>Voici quelques pistes pour coder la deuxième solution. Premièrement, pour faire défiler les mots dans l'ordre de notre liste (<em>array</em>), on peut utiliser l'<strong>index</strong> des éléments de notre liste.</p>
-
-
+          <p>Hier zijn een paar manieren om de tweede oplossing te coderen. Ten eerste, om de woorden in de volgorde van onze lijst (<em>array</em>) te laten scrollen, kunnen we de <strong>index</strong> van de elementen in onze lijst gebruiken.</p>
 
           <div class="alert alert-warning" role="alert">
             <p>
-              <i class="far fa-lightbulb"></i>  En JavaScript, comme dans beaucoup d'autres langages de programmation, les éléments d'une liste ont un index qui commence à <strong>0</strong>. On peut accéder à des éléments individuels de la liste grâce à leur index:</p>
+              <i class="far fa-lightbulb"></i>  In JavaScript, net als in veel andere programmeertalen, hebben de elementen van een lijst een index die begint bij <strong>0</strong>. We kunnen individuele elementen van de lijst benaderen via hun index:
+            </p>
               <img class="flexgif img-shadow mb-3" src="images/step13.png" alt="">
           </div>
 
-          <p>Au lieu de choisir un mot aléatoirement de notre liste, tu peux maintenant choisir le <em>premier</em> mot de notre liste (index <strong>0</strong>) ainsi; <code class="language-js">text(adjectives[0], 100, 200);</code></p>
+          <p>In plaats van willekeurig een woord uit onze lijst te kiezen, kan je nu ook het <em>eerste</em> woord in onze lijst (index <strong>0</strong>) kiezen: <code class="language-js">text(adjectives[0], 100, 200);</code></p>
 
-          <p>Chouette, mais plus rien ne défile. On reste bloqué sur le premier mot. Pour avoir le second mot, il faudrait <code class="language-js">text(adjectives[1], 100, 200);</code></p>
+          <p>Leuk, maar niets rolt meer. We zitten nog steeds vast op het eerste woord. Om het tweede woord te krijgen, heb je <code class="language-js">text(adjectives[1], 100, 200);</code> nodig</p>
 
-          <p>Or, si tu combines les deux lignes de code</p>
+          <p>Nu, als je de twee regels code combineert</p>
 
           <pre>
             <code class="language-js">
@@ -612,14 +611,14 @@ text('word', 10, 30);
             </code>
           </pre>
 
-          <p>le résultat n'est pas terrible:</p>
+          <p>is het resultaat niet echt fantastisch:</p>
           <img class="img-shadow mb-3" src="images/step13b.png" alt="">
 
-          <p>Constat: on ne peut pas utiliser l'instruction <code class="language-js">text()</code> deux fois dans la fonction <code class="language-js">draw()</code></p>
+          <p>We constateren: we kunnen de <code class="language-js">text()</code> instructie niet tweemaal gebruiken in de <code class="language-js">draw()</code> functie.</p>
 
-          <p>Comme il faut que l'index change à chaque fois que la fonction <code class="language-js">draw()</code> est exécutée, on va créer une variable <code class="language-js">index</code> qu'on va incrémenter.</p>
+          <p>Aangezien de index moet veranderen telkens als de <code class="language-js">draw()</code> functie wordt uitgevoerd, maken we een <code class="language-js">index</code> variabele die we gaan verhogen.</p>
 
-          <p>Observe ce code:</p>
+          <p>Kijk eens naar deze code:</p>
           <pre>
             <code class="language-js">
               let index = 0;
@@ -628,54 +627,58 @@ text('word', 10, 30);
             </code>
           </pre>
 
-          <p>Sur la première ligne, on déclare notre variable index et on lui assigne la valeur <strong>0</strong>. Sur la deuxième ligne, on utilise la valeur de la variable <code class="language-js">index</code> pour accéder à l'élément 0 de la liste <code class="language-js">adjectives</code>. Finalement, sur la troisième ligne, <code class="language-js">index++</code> veut dire qu'on ajoute 1 à la variable <code class="language-js">index</code> et qu'on sauvegarde cette nouvelle valeur en mémoire.</p>
+          <p>Op de eerste regel declareren we onze index variabele en kennen we er de waarde <strong>0</strong> aan toe. Op de tweede regel gebruiken we de waarde van de <code class="language-js">index</code> variabele om toegang te krijgen tot element 0 van de <code class="language-js">adjectives</code> lijst.
 
-          <p>C'est comme si on utilisait ce bloc en Scratch:</p>
+          Tenslotte, op de derde regel, betekent <code class="language-js">index++</code> dat we 1 toevoegen aan de index variabele en dat we deze nieuwe waarde in het geheugen opslaan.</p>
+
+          <p>Het is alsof je dit blok in Scratch gebruikt:</p>
           <img class="img-shadow mb-3" src="images/step13c.png" alt="">
 
-          <p>On lance notre code et... l'animation est toujours bloquée sur le premier mot de la liste (à l'index 0).</p>
+          <p>We voeren onze code uit en... de animatie zit nog steeds vast op het eerste woord in de lijst (op index 0).</p>
 
-          <p>Pourtant si tu utilises l'instruction <code class="language-js">console.log(index);</code> comme ceci, l'index semble bien passer à 1!</p>
+          <p>Als je echter de <code class="language-js">console.log(index);</code> verklaring gebruikt, zoals deze</p>
           <img class="img-shadow mb-3" src="images/step13d.png" alt="">
 
-          <p>S'il ne passe jamais à 2, c'est qu'à chaque fois que la fonction <code class="language-js">draw()</code> est exécutée (plusieurs fois par secondes), l'ordinateur repasse par l'instruction <code class="language-js">let index = 0;</code>. Dans la mémoire de l'ordinateur, la variable index prend la valeur 0 puis 1 puis 0 puis 1 puis 0 puis 1 puis 0... Regarde:</p>
+          <p>lijkt de index naar 1 te gaan!
+
+          <p>Als het nooit naar 2 gaat, komt dat omdat iedere keer dat de <code class="language-js">draw()</code> functie wordt uitgevoerd (meerdere keren per seconde), de computer de <code class="language-js">let index = 0;</code> verklaring opnieuw doorloopt. In het geheugen van de computer heeft de index variabele de waarde 0 dan 1 dan 0 dan 1 dan 0 dan 1 dan 0... Kijk:</p>
 
           <img class="img-shadow mb-3" src="images/step13e.png" alt="">
 
-          <p>Conclusion: on ne peut pas garder l'instruction <code class="language-js">let index = 0;</code> dans la fonction <code class="language-js">draw()</code> Cette instruction ne doit s'exécuter qu'une seule fois! À ton avis, où doit-on placer cette instruction dans notre code?</p>
+          <p>Conclusie: we kunnen de instructie <code class="language-js">let index = 0;</code> niet in de <code class="language-js">draw()</code> functie laten staan Deze instructie mag maar één keer worden uitgevoerd! Waar in onze code moeten we deze verklaring volgens jou plaatsen?</p>
 
           <p>
             <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Hint</a>
           </p>
           <div class="collapse mb-3" id="collapseHint3">
             <div class="card card-body">
-              <p>Avant la fonction <code class="language-js">setup()</code>. Et si on la mettait dans la fonction? Ça ne marcherait pas. Sais-tu pourquoi? Ça c'est vraiment une question pour les PROS!</p>
+              <p>Voor de <code class="language-js">setup()</code> functie. En wat als we het in de functie zetten? Dat zou niet werken. Weet je waarom? Dit is echt een vraag voor de PROS!</p>
             </div>
           </div>
 
-          <p>Nos trois premiers mots apparaissent, et puis plus rien! Si tu as gardé l'instruction <code class="language-js">console.log(index);</code>, tu peux voir le message d'erreur suivant dans la console:</p>
+          <p>Onze eerste drie woorden verschijnen, en dan niets! Als je de <code class="language-js">console.log(index);</code> verklaring houdt, zie je de volgende foutmelding in de console:</p>
           <img class="img-shadow" src="images/step13f.png" alt="canvas with new font">
 
-          <p>L'ordinateur se plaint à partir de l'index <strong>3</strong>. Normal, il n'y a aucun mot qui correspond à l'index 3 dans ma liste, car ma liste ne comprend que 3 adjectifs! Le dernier index, c'est l'index <strong>2</strong>.</p>
+          <p>De computer klaagt vanaf index <strong>3</strong>. Dit is normaal aangezien er in mijn lijst geen woord is dat overeenkomt met index 3, omdat mijn lijst slechts 3 bijvoeglijke naamwoorden bevat! De laatste index is index <strong>2</strong>.</p>
 
-          <p>Du coup, il faut empêcher l'ordinateur d'ajouter un à la variable index, si la variable a déjà la valeur du dernier index de la liste. Voici comment on écrit une <strong>condition</strong> en JavaScript:</p>
+          <p>We moeten dus voorkomen dat de computer één toevoegt aan de index variabele, als de variabele al de waarde heeft van de laatste index van de lijst. Hier is hoe je een <strong>voorwaarde</strong> in JavaScript schrijft:</p>
 
           <pre>
             <code class="language-js">
               if (index == adjectives.length - 1) {
-                // INSTRUCTIONS À EXÉCUTER
+                // INSTRUCTIES OM UIT TE VOEREN
               }
               else {
-                // D'AUTRES INSTRUCTIONS À EXÉCUTER
+                // ANDERE VERKLARINGEN UIT TE VOEREN
               }
             </code>
           </pre>
 
-          <p>En bon français, ce code veut dire "si (<em>if</em>) l'index est égal à (<code class="language-js">==</code>) la longueur de la liste des adjectifs moins un (<code class="language-js">adjectives.length - 1</code>), alors exécute ces instructions, sinon (<em>else</em>), exécute ces autres instructions".</p>
-          <p>À toi de trouver les bonnes instructions!!!</p>
+          <p>In het Nederlands, betekent deze code "als (<em>if</em>) de index gelijk is aan (<code class="language-js">==</code>) de lengte van de lijst met bijvoeglijke naamwoorden min één (<code class="language-js">adjectives.length - 1</code>), voer dan deze instructies uit, anders (<em>else</em>), voer dan deze andere instructies uit".</p>
+          <p>Het is aan jou om de juiste instructies te vinden!!!</p>
           <img class="img-shadow mb-3" src="images/step13g.gif" alt="canvas with new font">
 
-          <p>Nos mots défilent maintenant en ordre et de façon régulière!<i class="far fa-hand-peace"></i></p>
+          <p>Onze woorden scrollen nu op volgorde en op een regelmatige manier<i class="far fa-hand-peace"></i></p>
 
 
         </div>
@@ -694,7 +697,7 @@ text('word', 10, 30);
   <div class="footer-copyright">
     <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" class="alert-link copyright">
       <i class="far fa-copyright"></i>
-      2020 Techies Lab ASBL. All rights reserved.
+      2021 Techies Lab ASBL. All rights reserved.
     </a>
   </div>
 </div>
