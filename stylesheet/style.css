@@ -168,4 +168,6 @@ html {
   justify-content: space-around;
 }
 
-
+#language-link {
+  text-align: center;
+}
