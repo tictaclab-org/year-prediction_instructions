@@ -29,7 +29,7 @@
       <p>Si tu visites <a target="_blank" href="projet/project_index.html">cette page</a>, tu verras des mots défiler. Clique n'importe où sur la page pour dévoiler ton mot-clé de 2021.</p>
       <a class="btn btn-primary tl-button" href="#challenge" role="button">Commencer !</a>
     </div>
-  </div>
+  </div> <!-- end .banner -->
   <p id=language-link>🗨️ Voor de Nederlandse versie, <a href="ndl.html"> klik hier</a>!</p>
 
   <div class="container" id="challenge">
@@ -41,7 +41,7 @@
       <div class="alert alert-danger" role="alert">
         A simple danger alert—check it out!
       </div>
-    </div>
+    </div> <!-- end .gamification -->
 
     <div class="accordion" id="accordionExample">
       <div class="card">
@@ -239,7 +239,7 @@ text('word', 10, 30);
             </div>
           </div>
         </div>
-      </div>
+      </div> <!-- end .card -->
       <div class="card">
         <div class="card-header" id="headingThree">
           <h2 class="mb-0">
@@ -348,10 +348,10 @@ text('word', 10, 30);
 }
           </code></pre>
 
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card">
+      <div class="card">
       <div class="card-header" id="headingThree">
         <h2 class="mb-0">
           <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
@@ -373,8 +373,8 @@ text('word', 10, 30);
 
         </div>
       </div>
-    </div> <!-- end .card -->
-    <div class="card">
+      </div> <!-- end .card -->
+      <div class="card">
       <div class="card-header" id="headingEleven">
         <h2 class="mb-0">
           <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
@@ -462,8 +462,8 @@ text('word', 10, 30);
           <img class="img-shadow" src="images/step11b.png" alt="canvas with new colors">
         </div>
       </div>
-    </div> <!-- end .card -->
-    <div class="card">
+      </div> <!-- end .card -->
+      <div class="card">
       <div class="card-header" id="headingTwelve">
         <h2 class="mb-0">
           <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
@@ -520,15 +520,16 @@ text('word', 10, 30);
           <img class="img-shadow" src="images/style_result.png" alt="canvas with new font">
         </div>
       </div>
-    </div> <!-- end .card -->
+      </div> <!-- end .card -->
 
-    <div class="card">
-      <div class="card-header" id="headingThirteen">
-        <h2 class="mb-0">
-          <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
-            <span>Etape 13 - Partage ton projet avec le monde!🌍</span>
-          </button>
-        </h2>
+      <div class="card">
+        <div class="card-header" id="headingThirteen">
+          <h2 class="mb-0">
+            <button class="btn btn-link task collapsed" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+              <span>Etape 13 - Partage ton projet avec le monde!🌍</span>
+            </button>
+          </h2>
+        </div> <!-- end .card-header -->
 
         <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
           <div class="card-body">
@@ -547,143 +548,140 @@ text('word', 10, 30);
           </div>
         </div>
 
-    </div> <!-- end .card -->
+      </div> <!-- end .card -->
 
-    <div class="card">
-      <div class="card-header" id="headingFourteen">
-        <h2 class="mb-0">
-          <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
-            Etape 14 - Défilement régulier
-            <span class="badge badge-dark">Optionnel</span>
-            <span class="badge badge-warning">Difficile 🏆</span>
-          </button>
-        </h2>
-      </div>
-      <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
-        <div class="card-body">
-          <p>Tu as peut-être noté que le défilement des mots n'est pas parfaitement régulier. Parfois, on dirait que ça "bloque" sur un mot. Peux-tu deviner pourquoi?</p>
+      <div class="card">
+        <div class="card-header" id="headingFourteen">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+              Etape 14 - Défilement régulier
+              <span class="badge badge-dark">Optionnel</span>
+              <span class="badge badge-warning">Difficile 🏆</span>
+            </button>
+          </h2>
+        </div><!-- end .card-header -->
+        <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Tu as peut-être noté que le défilement des mots n'est pas parfaitement régulier. Parfois, on dirait que ça "bloque" sur un mot. Peux-tu deviner pourquoi?</p>
 
-          <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint4" role="button" aria-expanded="false" aria-controls="collapseHint4">Indice</a>
-          </p>
-          <div class="collapse mb-3" id="collapseHint4">
-            <div class="card card-body">
-              <p>Le problème, c'est que nous utilisons la fonction <code class="language-js">random()</code> pour choisir aléatoirement les mots à afficher.</p>
-              <p>L'ordinateur pourrait aléatoirement choisir les mots dans cet ordre:</p>
-              <ol>
-                <li>gentil</li>
-                <li>stylé</li>
-                <li>téméraire</li>
-                <li>téméraire</li>
-                <li>téméraire</li>
-                <li>gentil</li>
-              </ol>
-
-              <p>Comme il a choisi trois fois d'affilée le mot "téméraire", le mot va apparaître à l'écran plus longtemps.</p>
-            </div>
-          </div>
-
-          <p>Deux solutions sont envisageables:</p>
-          <ol>
-            <li>On continue de choisir les mots aléatoirement, mais si le mot choisi est le même que le précédent, alors on en choisit un autre.</li>
-            <li>On fait défiler les mots dans l'ordre de notre liste et lorsqu'on arrive à la fin de la liste, on recommence au début.</li>
-          </ol>
-
-          <p>Voici quelques pistes pour coder la deuxième solution. Premièrement, pour faire défiler les mots dans l'ordre de notre liste (<em>array</em>), on peut utiliser l'<strong>index</strong> des éléments de notre liste.</p>
-
-
-
-          <div class="alert alert-warning" role="alert">
             <p>
-              <i class="far fa-lightbulb"></i>  En JavaScript, comme dans beaucoup d'autres langages de programmation, les éléments d'une liste ont un index qui commence à <strong>0</strong>. On peut accéder à des éléments individuels de la liste grâce à leur index:</p>
-              <img class="flexgif img-shadow mb-3" src="images/step13.png" alt="">
-          </div>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint4" role="button" aria-expanded="false" aria-controls="collapseHint4">Indice</a>
+            </p>
+            <div class="collapse mb-3" id="collapseHint4">
+              <div class="card card-body">
+                <p>Le problème, c'est que nous utilisons la fonction <code class="language-js">random()</code> pour choisir aléatoirement les mots à afficher.</p>
+                <p>L'ordinateur pourrait aléatoirement choisir les mots dans cet ordre:</p>
+                <ol>
+                  <li>gentil</li>
+                  <li>stylé</li>
+                  <li>téméraire</li>
+                  <li>téméraire</li>
+                  <li>téméraire</li>
+                  <li>gentil</li>
+                </ol>
 
-          <p>Au lieu de choisir un mot aléatoirement de notre liste, tu peux maintenant choisir le <em>premier</em> mot de notre liste (index <strong>0</strong>) ainsi; <code class="language-js">text(adjectives[0], 100, 200);</code></p>
-
-          <p>Chouette, mais plus rien ne défile. On reste bloqué sur le premier mot. Pour avoir le second mot, il faudrait <code class="language-js">text(adjectives[1], 100, 200);</code></p>
-
-          <p>Or, si tu combines les deux lignes de code</p>
-
-          <pre>
-            <code class="language-js">
-              text(adjectives[0], 100, 200);
-              text(adjectives[1], 100, 200);
-            </code>
-          </pre>
-
-          <p>le résultat n'est pas terrible:</p>
-          <img class="img-shadow mb-3" src="images/step13b.png" alt="">
-
-          <p>Constat: on ne peut pas utiliser l'instruction <code class="language-js">text()</code> deux fois dans la fonction <code class="language-js">draw()</code></p>
-
-          <p>Comme il faut que l'index change à chaque fois que la fonction <code class="language-js">draw()</code> est exécutée, on va créer une variable <code class="language-js">index</code> qu'on va incrémenter.</p>
-
-          <p>Observe ce code:</p>
-          <pre>
-            <code class="language-js">
-              let index = 0;
-              text(adjectives[index], 100, 200);
-              index++;
-            </code>
-          </pre>
-
-          <p>Sur la première ligne, on déclare notre variable index et on lui assigne la valeur <strong>0</strong>. Sur la deuxième ligne, on utilise la valeur de la variable <code class="language-js">index</code> pour accéder à l'élément 0 de la liste <code class="language-js">adjectives</code>. Finalement, sur la troisième ligne, <code class="language-js">index++</code> veut dire qu'on ajoute 1 à la variable <code class="language-js">index</code> et qu'on sauvegarde cette nouvelle valeur en mémoire.</p>
-
-          <p>C'est comme si on utilisait ce bloc en Scratch:</p>
-          <img class="img-shadow mb-3" src="images/step13c.png" alt="">
-
-          <p>On lance notre code et... l'animation est toujours bloquée sur le premier mot de la liste (à l'index 0).</p>
-
-          <p>Pourtant si tu utilises l'instruction <code class="language-js">console.log(index);</code> comme ceci, l'index semble bien passer à 1!</p>
-          <img class="img-shadow mb-3" src="images/step13d.png" alt="">
-
-          <p>S'il ne passe jamais à 2, c'est qu'à chaque fois que la fonction <code class="language-js">draw()</code> est exécutée (plusieurs fois par secondes), l'ordinateur repasse par l'instruction <code class="language-js">let index = 0;</code>. Dans la mémoire de l'ordinateur, la variable index prend la valeur 0 puis 1 puis 0 puis 1 puis 0 puis 1 puis 0... Regarde:</p>
-
-          <img class="img-shadow mb-3" src="images/step13e.png" alt="">
-
-          <p>Conclusion: on ne peut pas garder l'instruction <code class="language-js">let index = 0;</code> dans la fonction <code class="language-js">draw()</code> Cette instruction ne doit s'exécuter qu'une seule fois! À ton avis, où doit-on placer cette instruction dans notre code?</p>
-
-          <p>
-            <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
-          </p>
-          <div class="collapse mb-3" id="collapseHint3">
-            <div class="card card-body">
-              <p>Avant la fonction <code class="language-js">setup()</code>. Et si on la mettait dans la fonction? Ça ne marcherait pas. Sais-tu pourquoi? Ça c'est vraiment une question pour les PROS!</p>
+                <p>Comme il a choisi trois fois d'affilée le mot "téméraire", le mot va apparaître à l'écran plus longtemps.</p>
+              </div>
             </div>
-          </div>
 
-          <p>Nos trois premiers mots apparaissent, et puis plus rien! Si tu as gardé l'instruction <code class="language-js">console.log(index);</code>, tu peux voir le message d'erreur suivant dans la console:</p>
-          <img class="img-shadow" src="images/step13f.png" alt="canvas with new font">
+            <p>Deux solutions sont envisageables:</p>
+            <ol>
+              <li>On continue de choisir les mots aléatoirement, mais si le mot choisi est le même que le précédent, alors on en choisit un autre.</li>
+              <li>On fait défiler les mots dans l'ordre de notre liste et lorsqu'on arrive à la fin de la liste, on recommence au début.</li>
+            </ol>
 
-          <p>L'ordinateur se plaint à partir de l'index <strong>3</strong>. Normal, il n'y a aucun mot qui correspond à l'index 3 dans ma liste, car ma liste ne comprend que 3 adjectifs! Le dernier index, c'est l'index <strong>2</strong>.</p>
-
-          <p>Du coup, il faut empêcher l'ordinateur d'ajouter un à la variable index, si la variable a déjà la valeur du dernier index de la liste. Voici comment on écrit une <strong>condition</strong> en JavaScript:</p>
-
-          <pre>
-            <code class="language-js">
-              if (index == adjectives.length - 1) {
-                // INSTRUCTIONS À EXÉCUTER
-              }
-              else {
-                // D'AUTRES INSTRUCTIONS À EXÉCUTER
-              }
-            </code>
-          </pre>
-
-          <p>En bon français, ce code veut dire "si (<em>if</em>) l'index est égal à (<code class="language-js">==</code>) la longueur de la liste des adjectifs moins un (<code class="language-js">adjectives.length - 1</code>), alors exécute ces instructions, sinon (<em>else</em>), exécute ces autres instructions".</p>
-          <p>À toi de trouver les bonnes instructions!!!</p>
-          <img class="img-shadow mb-3" src="images/step13g.gif" alt="canvas with new font">
-
-          <p>Nos mots défilent maintenant en ordre et de façon régulière!<i class="far fa-hand-peace"></i></p>
+            <p>Voici quelques pistes pour coder la deuxième solution. Premièrement, pour faire défiler les mots dans l'ordre de notre liste (<em>array</em>), on peut utiliser l'<strong>index</strong> des éléments de notre liste.</p>
 
 
-        </div>
-      </div>
-    </div>  <!-- end of card -->
-  </div>
-  </div>
-</div>
+
+            <div class="alert alert-warning" role="alert">
+              <p>
+                <i class="far fa-lightbulb"></i>  En JavaScript, comme dans beaucoup d'autres langages de programmation, les éléments d'une liste ont un index qui commence à <strong>0</strong>. On peut accéder à des éléments individuels de la liste grâce à leur index:</p>
+                <img class="flexgif img-shadow mb-3" src="images/step13.png" alt="">
+            </div>
+
+            <p>Au lieu de choisir un mot aléatoirement de notre liste, tu peux maintenant choisir le <em>premier</em> mot de notre liste (index <strong>0</strong>) ainsi; <code class="language-js">text(adjectives[0], 100, 200);</code></p>
+
+            <p>Chouette, mais plus rien ne défile. On reste bloqué sur le premier mot. Pour avoir le second mot, il faudrait <code class="language-js">text(adjectives[1], 100, 200);</code></p>
+
+            <p>Or, si tu combines les deux lignes de code</p>
+
+            <pre>
+              <code class="language-js">
+                text(adjectives[0], 100, 200);
+                text(adjectives[1], 100, 200);
+              </code>
+            </pre>
+
+            <p>le résultat n'est pas terrible:</p>
+            <img class="img-shadow mb-3" src="images/step13b.png" alt="">
+
+            <p>Constat: on ne peut pas utiliser l'instruction <code class="language-js">text()</code> deux fois dans la fonction <code class="language-js">draw()</code></p>
+
+            <p>Comme il faut que l'index change à chaque fois que la fonction <code class="language-js">draw()</code> est exécutée, on va créer une variable <code class="language-js">index</code> qu'on va incrémenter.</p>
+
+            <p>Observe ce code:</p>
+            <pre>
+              <code class="language-js">
+                let index = 0;
+                text(adjectives[index], 100, 200);
+                index++;
+              </code>
+            </pre>
+
+            <p>Sur la première ligne, on déclare notre variable index et on lui assigne la valeur <strong>0</strong>. Sur la deuxième ligne, on utilise la valeur de la variable <code class="language-js">index</code> pour accéder à l'élément 0 de la liste <code class="language-js">adjectives</code>. Finalement, sur la troisième ligne, <code class="language-js">index++</code> veut dire qu'on ajoute 1 à la variable <code class="language-js">index</code> et qu'on sauvegarde cette nouvelle valeur en mémoire.</p>
+
+            <p>C'est comme si on utilisait ce bloc en Scratch:</p>
+            <img class="img-shadow mb-3" src="images/step13c.png" alt="">
+
+            <p>On lance notre code et... l'animation est toujours bloquée sur le premier mot de la liste (à l'index 0).</p>
+
+            <p>Pourtant si tu utilises l'instruction <code class="language-js">console.log(index);</code> comme ceci, l'index semble bien passer à 1!</p>
+            <img class="img-shadow mb-3" src="images/step13d.png" alt="">
+
+            <p>S'il ne passe jamais à 2, c'est qu'à chaque fois que la fonction <code class="language-js">draw()</code> est exécutée (plusieurs fois par secondes), l'ordinateur repasse par l'instruction <code class="language-js">let index = 0;</code>. Dans la mémoire de l'ordinateur, la variable index prend la valeur 0 puis 1 puis 0 puis 1 puis 0 puis 1 puis 0... Regarde:</p>
+
+            <img class="img-shadow mb-3" src="images/step13e.png" alt="">
+
+            <p>Conclusion: on ne peut pas garder l'instruction <code class="language-js">let index = 0;</code> dans la fonction <code class="language-js">draw()</code> Cette instruction ne doit s'exécuter qu'une seule fois! À ton avis, où doit-on placer cette instruction dans notre code?</p>
+
+            <p>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint3" role="button" aria-expanded="false" aria-controls="collapseHint3">Indice</a>
+            </p>
+            <div class="collapse mb-3" id="collapseHint3">
+              <div class="card card-body">
+                <p>Avant la fonction <code class="language-js">setup()</code>. Et si on la mettait dans la fonction? Ça ne marcherait pas. Sais-tu pourquoi? Ça c'est vraiment une question pour les PROS!</p>
+              </div>
+            </div>
+
+            <p>Nos trois premiers mots apparaissent, et puis plus rien! Si tu as gardé l'instruction <code class="language-js">console.log(index);</code>, tu peux voir le message d'erreur suivant dans la console:</p>
+            <img class="img-shadow" src="images/step13f.png" alt="canvas with new font">
+
+            <p>L'ordinateur se plaint à partir de l'index <strong>3</strong>. Normal, il n'y a aucun mot qui correspond à l'index 3 dans ma liste, car ma liste ne comprend que 3 adjectifs! Le dernier index, c'est l'index <strong>2</strong>.</p>
+
+            <p>Du coup, il faut empêcher l'ordinateur d'ajouter un à la variable index, si la variable a déjà la valeur du dernier index de la liste. Voici comment on écrit une <strong>condition</strong> en JavaScript:</p>
+
+            <pre>
+              <code class="language-js">
+                if (index == adjectives.length - 1) {
+                  // INSTRUCTIONS À EXÉCUTER
+                }
+                else {
+                  // D'AUTRES INSTRUCTIONS À EXÉCUTER
+                }
+              </code>
+            </pre>
+
+            <p>En bon français, ce code veut dire "si (<em>if</em>) l'index est égal à (<code class="language-js">==</code>) la longueur de la liste des adjectifs moins un (<code class="language-js">adjectives.length - 1</code>), alors exécute ces instructions, sinon (<em>else</em>), exécute ces autres instructions".</p>
+            <p>À toi de trouver les bonnes instructions!!!</p>
+            <img class="img-shadow mb-3" src="images/step13g.gif" alt="canvas with new font">
+
+            <p>Nos mots défilent maintenant en ordre et de façon régulière!<i class="far fa-hand-peace"></i></p>
+          </div> <!-- end .card-body -->
+        </div> <!-- end #collapseFourteen -->
+      </div>  <!-- end .card -->
+    </div> <!-- end .accordion -->
+  </div> <!-- end .container -->
 
 <div class="footer">
   <div class="footer-links">
